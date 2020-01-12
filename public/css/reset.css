@@ -41,27 +41,13 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('IBMPlexSans.eot');
-  src: url('fonts/IBMPlexSans.eot?#iefix') format('embedded-opentype'),
-  url('fonts/IBMPlexSans.woff') format('woff'),
-  url('fonts/IBMPlexSans.ttf') format('truetype');
-
-}
-
 div {
   box-sizing: border-box;
 }
 
-.site {
-  display: flex;
-  flex-direction: row;
-
-  min-width: 320px;
-  height: 100vh;
-
-  color: #82869e;
-  font-size: 14px;
-  font-family: 'IBM Plex Sans', sans-serif;
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	padding: 0px;
 }

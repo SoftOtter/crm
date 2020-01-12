@@ -1,0 +1,174 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+header .left-part{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+header .btn-burger {
+    margin-right: 24px;
+
+    display: none;
+}
+
+header .btn-burger .btn-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .btn-burger svg {
+    width: 18px;
+    height: 14px;
+    fill: #8f92a3;
+}
+
+header .left-part .btn-project-select span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #383e5c;
+    font-family: 'IBM Plex Sans';
+}
+
+header .left-part .btn-project-select .open-list-icon {
+    transform: rotate(-90deg);
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+header .left-part .list-of-project {}
+
+header .left-part .date {
+    color: #82869e;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+    margin-left: 30px;
+}
+
+header .left-part .dollar-rate {
+    margin-left: 20px;
+}
+
+header .left-part .dollar-rate span {
+    color: #82869e;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}
+
+header .left-part .euro-rate {
+    margin-left: 20px;
+}
+
+header .left-part .euro-rate span {
+    color: #82869e;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}
+
+header .right-part {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #82869e;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans';
+    line-height: 20px;
+    margin-right: 24px;
+}
+
+header .right-part .btn-help {
+    margin-right: 33px;
+    color: #82869e;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+    display: flex;
+    align-items: center;
+}
+
+header .right-part .btn-help svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    margin-top: 1px;
+    fill: #82869e;
+}
+
+header .right-part .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .right-part .user-icon-container {
+    margin-right: 8px;
+}
+
+header .right-part .info {
+    margin: 13px 17px 10px 0px;
+    line-height: 15px;
+}
+
+header .right-part .info .full-name {
+    color: #383e5c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header .right-part .info .position {
+    color: #82869e;
+    font-size: 12px;
+}
+
+header .right-part .btn-user-menu {
+    margin-bottom: 10px;
+}
+
+header .right-part .more-info-icon svg{
+    fill: #383e5c;
+}
+
+header .right-part .aside-buttons {
+    display: none;
+}
+
+header .right-part .aside-buttons .btn-notifications-label {
+    margin-right: 20px;
+}
+
+header .right-part .aside-buttons .btn-notifications-label svg {
+    width: 16px;
+    height: 19px;
+    fill: #383e5c;
+}
+
+header .right-part .aside-buttons .btn-messages-label svg {
+    width: 17px;
+    height: 19px;
+}
+
+header .right-part .aside-buttons .btn-messages-label .st0 {
+    fill: none;
+}
+
+header .right-part .aside-buttons .btn-messages-label .st1 {
+    fill: #FFFFFF;
+    stroke: #383e5c;
+    stroke-miterlimit:10;
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('fonts/IBMPlexSans.eot');
+  src: url('fonts/IBMPlexSans.eot?#iefix') format('embedded-opentype'),
+  url('fonts/IBMPlexSans.woff') format('woff'),
+  url('fonts/IBMPlexSans.ttf') format('truetype');
+}
+
+.site {
+  display: flex;
+  flex-direction: row;
+
+  min-width: 320px;
+  height: 100vh;
+
+  color: #82869e;
+  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.site .user-icon-container{
+  background-color: #eee;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.site .more-info-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.site .more-info-icon svg {
+  fill: #82869e;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

@@ -21,20 +21,12 @@ main .todays-sales .tables-header .btn-add-sales svg{
     fill: #fff;
 }
 
-main .todays-sales .tables-header .btn-add-sales {
+.btn-add-sales {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     
-    background-color: #536dfe;
-    height: 36px;
-    border-radius: 4px;
     padding: 0 20px;
-
-    color: #fff;
-    font-size: 14px;
-    line-height: 20px;
-    font-family: 'IBM Plex Sans';
 }
 
 main .todays-sales table {

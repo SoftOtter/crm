@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Button from '../Button/Button';
 
 class TodaySalesTile extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class TodaySalesTile extends React.Component {
             <div className='tiles todays-sales'>
 				<div className='tables-header'>
 					<h2 className='tables-title'>Продажи сегодня</h2>
-					<button className='btn-add-sales'>
+					<Button type={'filled'} className='btn-add-sales'>
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 16 16" xmlSpace="preserve">
 						<g>
@@ -17,7 +18,7 @@ class TodaySalesTile extends React.Component {
 						</g>
 						</svg>
 						<span>Добавить продажу</span>
-					</button>
+					</Button>
 				</div>
 
 		    	<table>

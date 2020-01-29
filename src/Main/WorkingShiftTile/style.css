@@ -1,0 +1,56 @@
+main .working-shift {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .working-shift .tiles-header {
+    flex-shrink: 0;
+}
+
+main .working-shift .working-shift-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+main .working-shift .time-container {
+    width: 50%;
+    font-size: 12px;
+    text-align: center;
+}
+
+main .working-shift .disabled {
+    opacity: 0.5;
+}
+
+main .working-shift .time-label {
+    color: #82869e;
+}
+
+main .working-shift .lateness {
+    color: #ef4e76;
+}
+
+main .working-shift .time {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main .working-shift .btn-working-shift {
+    width: 100%;
+    background-color: #536dfe;
+    height: 36px;
+    border-radius: 4px;
+
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}

@@ -1,0 +1,146 @@
+main .todays-sales .tables-header {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    height: 52px;
+    width: 100%;
+}
+
+main .todays-sales .tables-title {
+    color: #383e5c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+main .todays-sales .tables-header .btn-add-sales svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    fill: #fff;
+}
+
+main .todays-sales .tables-header .btn-add-sales {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    background-color: #536dfe;
+    height: 36px;
+    border-radius: 4px;
+    padding: 0 20px;
+
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}
+
+main .todays-sales table {
+    table-layout: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 4px;
+}
+
+main .todays-sales table th, td {
+    height: 44px;
+    vertical-align: middle;
+}
+
+main .todays-sales table thead {
+    background-color: #f2f4ff;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #82869e;
+}
+
+main .todays-sales table thead tr th{
+    /*border: 1px solid #000;*/
+    padding: 0px 15px;
+}
+
+main .todays-sales table tbody tr td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+    padding: 0px 16px;
+}
+
+/*<th>*/
+
+main .todays-sales table th:nth-child(1){
+    width: 6%;
+    text-align: center;
+}
+
+main .todays-sales table th:nth-child(2){
+    width: 30%;
+    text-align: start;
+}
+
+main .todays-sales table th:nth-child(3){
+    width: 15%;
+    text-align: end;
+}
+
+main .todays-sales table th:nth-child(4){
+    width: 15%;
+    text-align: end;
+    padding-right: 35px;
+}
+
+main .todays-sales table th:nth-child(5){
+    width: 17%;
+    text-align: start;
+}
+
+/*<td>*/
+
+main .todays-sales table td:nth-child(1){
+    text-align: center;
+}
+
+main .todays-sales table td:nth-child(2){
+    text-align: start;
+}
+
+main .todays-sales table td:nth-child(3){
+    text-align: end;
+}
+
+main .todays-sales table td:nth-child(4){
+    text-align: end;
+    padding-right: 35px;
+}
+
+main .todays-sales table td:nth-child(5){
+    text-align: start;
+
+}
+
+main .todays-sales table .status .indicator-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #82869e;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+main .todays-sales table .confirm {
+    color: #9abd73;
+}
+
+main .todays-sales table .reject {
+    color: #ef4e76;
+}
+
+main .todays-sales table .status .confirm-icon {
+    background-color: #9abd73;
+}
+
+main .todays-sales table .status .reject-icon {
+    background-color: #ef4e76;
+}

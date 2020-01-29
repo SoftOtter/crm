@@ -1,0 +1,23 @@
+main .my-monthly-income {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+main .my-monthly-income .total-income {
+    color: #383e5c;
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 22px;
+    flex-shrink: 0;
+}
+
+main .my-monthly-income .description {
+    margin-top: 15px;
+    line-height: 14px;
+}

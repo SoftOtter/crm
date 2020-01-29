@@ -1,0 +1,69 @@
+main {
+    padding: 44px 24px 32px 24px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    background-color: #f9faff;
+    overflow: auto;
+}
+
+main .grid-wrapper {
+    display: grid;
+    grid-template-rows: 185px 185px 185px;
+	grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+main .tiles {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #383e5c;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+    padding: 0px 16px;
+    padding-bottom: 32px;
+    border-radius: 4px;
+}
+
+main .tiles-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #82869e;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    height: 27px;
+}
+
+main .tiles-header .btn-more {
+    height: 20px;
+}
+
+main .coordinator {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+main .supervisor {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+main .todays-sales {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+}

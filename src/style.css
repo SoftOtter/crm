@@ -34,6 +34,19 @@
   fill: #82869e;
 }
 
+.site .additional-info {
+  color: #82869e;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.main-and-aside-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 1px;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;

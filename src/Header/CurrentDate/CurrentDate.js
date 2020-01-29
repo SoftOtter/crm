@@ -29,15 +29,19 @@ class CurrentDate extends React.Component {
     render() {
         const today = new Date();
         const dateString =
-            today.getDate()
-            + ' '
-            + CurrentDate.months[today.getMonth()]
+            CurrentDate.toDateString(today)
             + ' '
             + CurrentDate.weekDays[today.getDay()];
 
         return (<>
             <div className='date'>{dateString}</div>
         </>);
+    }
+
+    static toDateString(date) {
+        return date.getDate()
+        + ' '
+        + CurrentDate.months[date.getMonth()];
     }
 }
 

@@ -1,0 +1,23 @@
+main .my-people .content {
+    display: flex;
+    flex-direction: column;
+}
+
+main .my-people .content .user-icon-container {
+    margin-top: 20px;
+}
+
+main .my-people .content .full-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #383e5c;
+    margin-top: 8px;
+}
+
+main .my-people .content .tel {
+    margin-top: 15px;
+}
+
+main .my-people .content .email {
+    margin-top: 2px;
+}

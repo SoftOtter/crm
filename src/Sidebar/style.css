@@ -1,0 +1,248 @@
+aside {
+    width: 256px;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+aside .mini-aside {
+    position: fixed;
+    right: 0px;
+    top: 60px;
+
+    display: none;
+}
+
+aside .mini-aside > svg {
+    position: relative;
+
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+
+    margin: 0px;
+    box-sizing: border-box;
+
+    fill: #82869e;
+}
+
+aside .mini-aside .buttons label {
+    width: 16px;
+    height: 16px;
+    border: none;
+    display: block;
+    margin: 0px;
+}
+
+aside .mini-aside .buttons label svg {
+    margin: 0px;
+}
+
+aside .mini-aside .buttons .btn-messages {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+
+aside .mini-aside .buttons .btn-tasks {
+    position: absolute;
+    top: 60px;
+    left: 8px;
+}
+
+aside .mini-aside .buttons .btn-notifications {
+    position: absolute;
+    top: 106px;
+    left: 8px;
+}
+
+aside .mini-aside .buttons .btn-notifications .indicator-icon {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ef4e76;
+    display: inline-block;
+
+    position: absolute;
+    top: -1px;
+    right: -3px;
+
+}
+
+aside .buttons {
+    display: flex;
+    margin: 14px 15px 0px 16px;
+}
+
+aside .buttons svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 10px auto;
+    fill: #82869e;
+}
+
+aside .buttons svg .st0 {
+    fill: none;
+}
+
+aside .buttons svg .st1 { 
+    fill: #FFFFFF;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+
+aside .buttons svg .st2 {
+    fill: none;
+}
+
+aside .buttons svg .st3 {
+    fill: #FFFFFF;
+}
+
+aside .buttons input {
+    display: none;
+}
+
+aside .buttons label {
+    width: 33%;
+    height: 36px;
+    border: 1px solid #c8cbd4;
+    z-index: 1;
+    cursor: pointer;
+}
+
+aside .aside .buttons label:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: -1px;
+}
+
+aside .aside .buttons label:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: -1px;
+}
+
+aside .buttons .aside-button[type="radio"]:checked + label {
+    border-color: #536dfe;
+    z-index: 5;
+    background-color: rgba(83, 109, 254, 0.08);
+}
+
+aside .buttons .aside-button[type="radio"]:checked + label svg{
+    fill: #536dfe;
+}
+
+aside .aside .buttons .btn-notifications {
+    position: relative;
+}
+
+aside .aside .buttons .btn-notifications .indicator-icon {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ef4e76;
+    display: inline-block;
+
+    position: absolute;
+    top: 9px;
+    right: 24px;
+
+    display: none;
+}
+
+
+aside .messages {
+    margin: 24px 8px 0px 8px;
+    color: #383e5c;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}
+
+aside .message {
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+aside .message:hover {
+    background-color: rgba(83, 109, 254, 0.1);
+    border-radius: 4px;
+}
+
+aside .message:hover .message-header .btn-reply {
+    display: block;
+}
+
+aside .message .message-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside .message .date-time {
+    color: #bfc1ca;
+    font-size: 12px;
+}
+
+aside .message .message-header .btn-reply {
+    display: none;
+    width: 16px;
+    height: 20px;
+}
+
+aside .message .message-header svg {
+    width: 12px;
+    height: 11px;
+    fill: #536dfe;
+}
+
+aside .message .user-info {
+    display: flex;
+}
+
+aside .message .user-info .user-icon-container {
+    flex-shrink: 0;
+}
+
+aside .message .user-info .user-name {
+    margin: 0px 5px 0px 10px;
+    line-height: 32px;
+    font-weight: 600;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+aside .message .user-info .online-indicator {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #8bc34a;
+    margin: 14px 0px;
+    flex-shrink: 0;
+}
+
+aside .message .message-content {
+    color: #82869e;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+aside .btn-all-messages-container {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8435749299719888) 35%, rgba(255,255,255,1) 100%);
+}
+
+aside .btn-all-messages-container .btn-all-messages {
+    color: #4b6bf7;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 53px;
+    left: 50%;
+    margin-left: -52px;
+}

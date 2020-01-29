@@ -1,0 +1,126 @@
+main .sales-statistics {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    padding: 0px;
+}
+
+main .sales-statistics .tiles-header {
+    height: 61px;
+    padding: 0px 16px;
+    align-items: center;
+    font-size: 14px;
+}
+
+main .sales-statistics .devider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(130, 134, 158, 0.2);
+}
+
+main .sales-statistics .btn-sales-statistics {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    padding-top: 10px;
+}
+
+main .sales-statistics .sales-statistics-icon {
+    width: 2px;
+    height: 7px;
+    background-color: #536dfe;
+    margin: 0px;
+    align-self: flex-end;
+    transform: translate(3px, -1px);
+}
+
+main .sales-statistics .sales-statistics-icon::before {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 10px;
+    background-color: #536dfe;
+    transform: translate(4px, -3px) ;
+}
+
+main .sales-statistics .sales-statistics-icon::after {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 13px;
+    background-color: #536dfe;
+    transform: translate(8px, -16px);
+}
+
+main .sales-statistics .sales-statistics-content {
+    padding: 0px 16px;
+    height: calc(100% - 62px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main .sales-statistics .periods {
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .sales-statistics .btn-periods {
+    color: #82869e;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+    margin-right: 20px;
+}
+
+main .sales-statistics .btn-periods-calendar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #536dfe;
+}
+
+main .sales-statistics svg {
+    width: 16px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    fill: #536dfe;
+}
+
+main .sales-statistics svg .st0 {
+    fill: #fff;
+}
+
+main .sales-statistics .periods .btn-periods:last-of-type {
+    margin-right: 8px;
+}
+
+main .sales-statistics .diagram {
+    width: 100%;
+    background-color: #82869e;
+    flex-grow: 1;
+}
+
+main .sales-statistics .btn-detailed-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 78px;
+    width: 100%;
+}
+
+main .sales-statistics .btn-detailed {
+    color: #536dfe;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+    margin-right: 8px;
+}

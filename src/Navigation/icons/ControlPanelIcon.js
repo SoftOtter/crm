@@ -4,7 +4,6 @@ class ControlPanelIcon extends React.Component {
     render() {
         return (
             <svg
-                class=''
                 version="1.1"
                 id="Слой_1"
                 xmlns="http://www.w3.org/2000/svg"

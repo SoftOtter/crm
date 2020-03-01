@@ -43,7 +43,7 @@ main .tiles-header .btn-more {
     height: 20px;
 }
 
-main .coordinator {
+/* main .coordinator {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
@@ -55,7 +55,7 @@ main .supervisor {
     grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end: 5;
-}
+} */
 
 main .todays-sales {
     grid-row-start: 3;

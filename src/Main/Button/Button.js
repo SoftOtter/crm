@@ -3,26 +3,27 @@ import './Button-style.css';
 
 class Button extends React.Component {
     render() {
-        const classname = this.getClassName();
+        const { type, className, children, ...rest } = this.props;
+        const classes = this.getClassName();
 
         return (
-            <button className={classname}>{this.props.children}</button>
+            <button className={classes} {...rest}>{this.props.children}</button>
         );
     }
 
     getClassName() {
-        let classname = '';
+        let defaultClasses = '';
         if (this.props.type === 'filled') {
-            classname = 'Button_blue'
+            defaultClasses = 'Button_blue'
         }
         else {
-            classname = 'Button_white'
+            defaultClasses = 'Button_white'
         }
-        classname = 'Button ' + classname;
+        defaultClasses = 'Button ' + defaultClasses;
         if (this.props.className) {
-            classname += ' ' + this.props.className;
+            defaultClasses += ' ' + this.props.className;
         }
-        return classname;
+        return defaultClasses;
     }
 }
 

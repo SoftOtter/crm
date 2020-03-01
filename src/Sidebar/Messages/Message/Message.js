@@ -29,8 +29,8 @@ class Message extends React.Component {
     static formatTime(time) {
         const timeObject = new Date(time);
         const currentDate = new Date();
-        const yesterdayDate = new Date(currentDate.getTime());
-        yesterdayDate.setDate(currentDate.getDate() - 1);
+        const yesterdayDate = new Date(currentDate.getTime()); // Copy current Date
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
 
         let result;
         if (timeObject.getFullYear() === currentDate.getFullYear()

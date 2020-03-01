@@ -51,4 +51,4 @@ const messages = [
     },
 ];
 
-export default messages;
+export { messages };

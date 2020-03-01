@@ -5,9 +5,9 @@ import './style.css';
 class MyPeopleTile extends React.Component {
     render() {
         return (
-            <div className='tiles my-people coordinator'>
+            <div className='tiles my-people'>
 				<div className='tiles-header'>
-					<h2 className='tiles-title'>Мой координатор</h2>
+					<h2 className='tiles-title'>{this.props.title}</h2>
 					<button className='btn-more'>
 						<div className='more-info-icon'>
                             <MoreInfoIcon />
@@ -18,9 +18,9 @@ class MyPeopleTile extends React.Component {
 					<div className='user-icon-container'>
 						<img className='user-icon' src='#' alt=''/>
 					</div>
-					<span className='full-name'>Петр Данилов</span>
-					<span className='additional-info tel'>+7 921 333 44 55</span>
-					<span className='additional-info email'>petyapetrov@mail.ru</span>
+					<span className='full-name'>{this.props.fullName}</span>
+					<span className='additional-info tel'>{this.props.tel}</span>
+					<span className='additional-info email'>{this.props.email}</span>
 				</div>
 			</div>
         );

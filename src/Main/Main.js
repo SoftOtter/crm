@@ -7,6 +7,7 @@ import MyTradingPointTile from './MyTradingPointTile/MyTradingPointTile';
 import MyPeopleTile from './MyPeopleTile/MyPeopleTile';
 import TodaySalesTile from './TodaySalesTile/TodaySalesTile';
 import MyMonthlyIncomeTile from './MyMonthlyIncomeTile/MyMonthlyIncomeTile';
+import NewSale from '../popups/NewSale/NewSale';
 
 class Main extends React.Component {
 	render() {
@@ -37,6 +38,7 @@ class Main extends React.Component {
 
 					<MyMonthlyIncomeTile />
 				</div>
+				<NewSale />
 			</main>
 		);
 	}

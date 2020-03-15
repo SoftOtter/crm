@@ -21,7 +21,4 @@ class Crm extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Crm />,
-    document.getElementById('root')
-);
+ReactDOM.render(<Crm />, document.getElementById('root'));

@@ -128,6 +128,7 @@ class WorkingShiftTile extends React.Component {
 			}
 		}
 
+		// formating minutes to 00..09
 		const minutes = currentTime.getMinutes() < 10
 			? '0' + currentTime.getMinutes()
 			: currentTime.getMinutes();

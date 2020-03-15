@@ -1,0 +1,84 @@
+.input input {
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    line-height: 38px;
+    padding: 0px;
+}
+
+.input {
+    /* width: 212px; */
+    min-width: 64px;
+    max-width: 448px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #c8cbd4;
+    border-radius: 4px;
+    color: #383e5c;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    line-height: 40px;
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+}
+
+.input:hover {
+    border-color: #536dfe;
+}
+
+.input:focus {
+    border-color: #4b62e3;
+}
+
+.input::placeholder {
+    color: #ced1d8;
+}
+
+.input:disabled {
+    border-color: #c5c7d0;
+    background-color: #c5c7d0;
+}
+
+.input.compact {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    padding: 0px 5px;
+}
+
+/* On focus border should be blue. Error should dissapear after change. */
+.input.error {
+    border-color: #ce135f;
+    padding-right: 0px;
+}
+
+p.error {
+    color: #ce135f;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.input-error-icon {
+    fill: #ce135f;
+}
+
+.input svg {
+    margin: 0px 8px;
+}
+
+.input .icon-rotate {
+    transform: rotate(90deg);
+}
+
+.label {
+    color: #82869e;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}

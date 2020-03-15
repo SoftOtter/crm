@@ -3,6 +3,7 @@ import Input from '../../UI kit/fields/Input';
 import './newsale-style.css';
 import ArrowDownIcon from '../../icons/ArrowDownIcon';
 import TextArea from '../../UI kit/fields/TextArea';
+import Select from '../../UI kit/select/Select';
 
 class NewSale extends React.Component {
     render() {
@@ -15,6 +16,8 @@ class NewSale extends React.Component {
                         error={'AAAAAAAAA!!!!!!111!!'}
                         icon={<ArrowDownIcon />}
                     />
+
+                    <Select />
 
                     <TextArea
                         label={"Textarea name"} 

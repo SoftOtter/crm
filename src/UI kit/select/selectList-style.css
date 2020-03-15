@@ -1,0 +1,20 @@
+.selectList {
+    padding: 20px 16px 16px 0px;
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+    position: absolute;
+}
+
+.selectList .listItem {
+    color: #82869e;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    line-height: 24px;
+    padding-left: 16px;
+    display: block;
+}
+
+.selectList .listItem:hover {
+    background-color: #caced9;
+}

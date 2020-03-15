@@ -14,7 +14,7 @@ class Input extends React.Component {
 
         return (
             <label for={this.props.id}>
-                <p className={'label'}>{this.props.label}</p>
+                <p className={'input-label'}>{this.props.label}</p>
                 <div className={classNames('input', this.props.className, this.props.error && 'error', this.props.compact && 'compact')}>
                     <input
                         id={this.props.id}

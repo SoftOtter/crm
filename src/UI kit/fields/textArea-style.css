@@ -1,0 +1,30 @@
+.textArea {
+    /* width: 212px; */
+    min-width: 64px;
+    max-width: 448px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #c8cbd4;
+    border-radius: 4px;
+    color: #383e5c;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    line-height: 40px;
+    padding: 0 12px;
+}
+
+.textArea:hover {
+    border-color: #536dfe;
+}
+
+.textArea:focus {
+    border-color: #4b62e3;
+}
+
+.textArea-label {
+    color: #82869e;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}

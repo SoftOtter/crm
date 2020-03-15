@@ -75,7 +75,7 @@ p.error {
     transform: rotate(90deg);
 }
 
-.label {
+.input-label {
     color: #82869e;
     font-size: 14px;
     font-family: IBM Plex Sans;

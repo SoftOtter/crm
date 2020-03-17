@@ -1,24 +1,16 @@
 import React from 'react';
-import ArrowDownIcon from '../../icons/ArrowDownIcon';
-import SelectList from './SelectList';
 import InputForSelect from './InputForSelect';
+import { dataForSelect } from './dataForSelect';
 
 class Select extends React.Component {
     render() {
-        return (<>
+        return (
             <InputForSelect
                 label={'Select name'}
                 placeholder={'Не выбрано'}
-                onClick={this.handleClick}
+                dataForSelect={dataForSelect}
             />
-
-            <SelectList />
-        </>);
-    }
-
-    handleClick = (event) => {
-        debugger;
-
+        );
     }
 }
 

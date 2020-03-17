@@ -4,6 +4,9 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
     position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
 }
 
 .selectList .listItem {
@@ -13,6 +16,7 @@
     line-height: 24px;
     padding-left: 16px;
     display: block;
+    cursor: pointer;
 }
 
 .selectList .listItem:hover {

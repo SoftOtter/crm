@@ -6,7 +6,7 @@ import SalesIcon from './icons/SalesIcon';
 import ReviseIcon from './icons/ReviseIcon';
 import WorkingDaysIcon from './icons/WorkingDaysIcon';
 import DocumentsIcon from './icons/DocumentsIcon';
-import './style.css';
+import './navigation-style.css';
 
 const logoImg = require('./logo.png');
 

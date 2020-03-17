@@ -1,6 +1,6 @@
 import React from 'react';
 import CalendarIcon from './icons/CalendarIcon';
-import './style.css';
+import './salesStatisticsTile-style.css';
 
 class SalesStatisticsTile extends React.Component {
 	render() {

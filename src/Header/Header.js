@@ -2,7 +2,7 @@ import React from 'react';
 import NavButton from './NavButton/NavButton';
 import ProjectSelect from './ProjectSelect/ProjectSelect';
 import CurrentDate from './CurrentDate/CurrentDate';
-import './style.css';
+import './header-style.css';
 import Rates from './Rates/Rates';
 import HelpIcon from './icons/HelpIcon';
 import MobileAsideButtons from './MobileAsideButtons/MobileAsideButtons';

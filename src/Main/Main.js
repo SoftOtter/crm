@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './main-style.css';
 import MoreInfoIcon from './icons/MoreInfoIcon';
 import SalesStatisticsTile from './SalesStatisticsTile/SalesStatisticsTile';
 import WorkingShiftTile from './WorkingShiftTile/WorkingShiftTile';

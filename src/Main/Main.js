@@ -38,7 +38,7 @@ class Main extends React.Component {
 
 					<MyMonthlyIncomeTile />
 				</div>
-				<NewSale />
+				{/* <NewSale /> */}
 			</main>
 		);
 	}

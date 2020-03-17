@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './todaySalesTile-style.css';
 import Button from '../Button/Button';
 
 class TodaySalesTile extends React.Component {

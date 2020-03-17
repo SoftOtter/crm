@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './myMonthlyIncomeTile-style.css';
 
 class MyMonthlyIncomeTile extends React.Component {
     render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import MoreInfoIcon from '../icons/./MoreInfoIcon';
-import './style.css';
+import './myPeopleTile-style.css';
 
 class MyPeopleTile extends React.Component {
     render() {

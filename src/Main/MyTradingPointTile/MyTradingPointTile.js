@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './myTradingPointTile-style.css';
 
 class MyTradingPointTile extends React.Component {
     render() {

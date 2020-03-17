@@ -1,0 +1,85 @@
+.fieldForAmount-wrapper {
+    color: #82869e;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+
+}
+
+.fieldForAmount-wrapper.error {
+    box-shadow: 0px 0px 0px 1px #ce135f;
+    width: 80px;
+    border-radius: 4px;
+}
+
+.amount-btn {
+    height: 28px;
+    width: 24px;
+    box-sizing: border-box;
+    border: 1px solid #c8cbd4;
+    color: #82869e;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    line-height: 26px;
+    color: #536dfe;
+}
+
+.minus-btn {
+    border-radius: 4px 0px 0px 4px;
+    border-right: none;
+}
+
+.plus-btn {
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+}
+
+.amount-btn:disabled {
+    border-color: #e2e3e7;
+    background-color: #e2e3e7;
+    color: #c5c7d0;
+}
+
+.amount-btn:disabled:hover {
+    border-color: #e2e3e7;
+    background-color: #e2e3e7;
+    color: #c5c7d0;
+    cursor: default;
+}
+
+.amount-btn:hover {
+    background-color: #4b62e3;
+    border-color: #4b62e3;
+    color: #fff;
+}
+
+.amount-input {
+    height: 28px;
+    width: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c8cbd4;
+    box-sizing: border-box;
+    line-height: 26px;
+    color: #82869e;
+    text-align: center;
+    font-size: 14px;
+    padding: 6px;
+    background-color: transparent;
+}
+
+.amount-input:hover {
+    border-color: #4b62e3;
+}
+
+.amount-input:focus {
+    border-color: #4257c9;
+    caret-color: #4257c9;
+}
+
+.fieldForAmount-label {
+    color: #82869e;
+    font-size: 14px;
+    font-family: IBM Plex Sans;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import MoreInfoIcon from '../icons/MoreInfoIcon';
 import Button from '../Button/Button';
-import './style.css';
+import './workingShiftTile-style.css';
 
 class WorkingShiftTile extends React.Component {
 	constructor(props) {

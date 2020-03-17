@@ -3,6 +3,9 @@ import Input from '../../UI kit/fields/Input';
 import './newsale-style.css';
 import ArrowDownIcon from '../../icons/ArrowDownIcon';
 import TextArea from '../../UI kit/fields/TextArea';
+import Select from '../../UI kit/select/Select';
+import FieldForAmount from '../../UI kit/fieldForAmount/FieldForAmount.js';
+import SearchIcon from '../../icons/SearchIcon';
 
 class NewSale extends React.Component {
     render() {
@@ -12,12 +15,19 @@ class NewSale extends React.Component {
                     <Input
                         label={'Field name'}
                         placeholder={'Enter smth'}
-                        error={'AAAAAAAAA!!!!!!111!!'}
-                        icon={<ArrowDownIcon />}
+                        error={''}
+                        icon={<SearchIcon />}
                     />
 
+                    <Select />
+
                     <TextArea
-                        label={"Textarea name"} 
+                        label={'Textarea name'} 
+                    />
+
+                    <FieldForAmount 
+                        label={'Amount'}
+                        upperBound={10}
                     />
                 </div>
             </div>

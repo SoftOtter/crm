@@ -2,6 +2,8 @@
     /* width: 212px; */
     min-width: 64px;
     max-width: 448px;
+    min-height: 80px;
+    max-height: 204px;
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid #c8cbd4;
@@ -14,11 +16,11 @@
 }
 
 .textArea:hover {
-    border-color: #536dfe;
+    border-color: #4b62e3;
 }
 
 .textArea:focus {
-    border-color: #4b62e3;
+    border-color: #4257c9;
 }
 
 .textArea-label {

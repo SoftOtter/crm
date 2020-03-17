@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
+import './index-style.css';
 import Navigation from './Navigation/Navigation';
 import Header from './Header/Header';
 import Sidebar from './Sidebar/Sidebar';

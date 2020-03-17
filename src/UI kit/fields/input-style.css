@@ -27,20 +27,35 @@
 }
 
 .input:hover {
-    border-color: #536dfe;
-}
-
-.input:focus {
     border-color: #4b62e3;
 }
 
-.input::placeholder {
+.input.inputForSelect-focused {
+    border-color: #4257c9;
+    caret-color: #4257c9;
+}
+
+input::placeholder {
     color: #ced1d8;
 }
 
-.input:disabled {
-    border-color: #c5c7d0;
-    background-color: #c5c7d0;
+.input.disabled {
+    border-color: #e2e3e7;
+    background-color: #e2e3e7;
+    color: #c5c7d0;
+    cursor: default;
+}
+
+input:disabled {
+    border-color: #e2e3e7;
+    background-color: #e2e3e7;
+    color: #c5c7d0;
+    cursor: default;
+}
+
+.input.disabled svg {
+    fill: #c5c7d0;
+    cursor: default;
 }
 
 .input.compact {
@@ -51,10 +66,13 @@
     padding: 0px 5px;
 }
 
+.input.icon-padding {
+    padding-right: 0px;
+}
+
 /* On focus border should be blue. Error should dissapear after change. */
 .input.error {
     border-color: #ce135f;
-    padding-right: 0px;
 }
 
 p.error {
@@ -69,10 +87,6 @@ p.error {
 
 .input svg {
     margin: 0px 8px;
-}
-
-.input .icon-rotate {
-    transform: rotate(90deg);
 }
 
 .input-label {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './sidebar-style.css';
 import AsideModeButtons from './AsideModeButtons/AsideModeButtons';
 import Messages from './Messages/Messages';
 import AllMessagesButton from './AllMessagesButton/AllMessagesButton';

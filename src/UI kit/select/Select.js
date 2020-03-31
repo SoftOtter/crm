@@ -1,5 +1,5 @@
 import React from 'react';
-import InputForSelect from './InputForSelect';
+import { InputForSelect } from './InputForSelect';
 import { dataForSelect } from './dataForSelect';
 
 class Select extends React.Component {

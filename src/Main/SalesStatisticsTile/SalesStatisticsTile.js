@@ -1,6 +1,9 @@
 import React from 'react';
-import CalendarIcon from './icons/CalendarIcon';
 import './salesStatisticsTile-style.css';
+import { SalesStatisticButton } from '../../icons/SalesStatisticButton';
+import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
+import { ButtonWithIcon } from '../../UI kit/buttonWithIcon/ButtonWithIcon';
+import { CalendarIcon } from '../../icons/CalendarIcon';
 
 class SalesStatisticsTile extends React.Component {
 	render() {
@@ -8,9 +11,12 @@ class SalesStatisticsTile extends React.Component {
 			<div className='tiles sales-statistics'>
 				<div className='tiles-header'>
 					<h2 className='tiles-title'>Статистика продаж</h2>
-					<button className='btn-sales-statistics'>
-						<div className='sales-statistics-icon'></div>
-					</button>
+
+					<ButtonIcon
+						className = {'SalesStatisticsTile-button'}
+                		icon = {<SalesStatisticButton className={'iconForButton'}/>}
+                		textForTooltip = {'???'}
+                	/>
 				</div>
 
 				<div className='devider'></div>
@@ -18,24 +24,43 @@ class SalesStatisticsTile extends React.Component {
 				<div className='sales-statistics-content'>
 					<div className='periods'>
 						<div className='periods-wrapper wrapper-for-media'>
-							<button className='btn-periods'>Неделя</button>
-							<button className='btn-periods'>Месяц</button>
-							<button className='btn-periods'>Квартал</button>
-							<button className='btn-periods'>Год</button>
-							<button className='btn-periods'>За все время</button>
+							<ButtonWithIcon
+								className='btn-periods'
+								buttonText = {'Неделя'}
+							/>
+							<ButtonWithIcon
+								className='btn-periods'
+								buttonText = {'Месяц'}
+							/>
+							<ButtonWithIcon
+								className='btn-periods'
+								buttonText = {'Квартал'}
+							/>
+							<ButtonWithIcon
+								className='btn-periods'
+								buttonText = {'Год'}
+							/>
+							<ButtonWithIcon
+								className='btn-periods'
+								buttonText = {'За все время'}
+							/>
 						</div>
 
-					<div className='periods-wrapper'>
-						<button className='btn-periods btn-periods-calendar'>
-							<CalendarIcon />
-							<span>Период</span>
-						</button>
+					<div className='periodButton-wrapper'>
+						<ButtonWithIcon
+							icon = {<CalendarIcon className={'iconForBtnWithIcon'}/>}
+							buttonText = {'Период'}
+							className={'periodButton'}
+						/>
 					</div>
 				</div>
 
 					<div className='diagram'>Here may be your diagram! ;D</div>
 					<div className='btn-detailed-container'>
-						<button className='btn-detailed'>Подробнее</button>
+						<ButtonWithIcon
+							buttonText = {'Подробнее'}
+							className={'btn-detailed'}
+						/>
 					</div>
 				</div>
 			</div>

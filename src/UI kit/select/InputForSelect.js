@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import ArrowDownIcon from '../../icons/ArrowDownIcon';
 import './inputForSelect-style.css';
 import ArrowUpIcon from '../../icons/ArrowUpIcon';
-import SelectList from './SelectList';
+import { SelectList } from './SelectList';
 
-class InputForSelect extends React.Component {
+export class InputForSelect extends React.Component {
     constructor(props) {
         super(props);
 
@@ -29,8 +29,14 @@ class InputForSelect extends React.Component {
 
         return (
             <div>
-                <p className={'inputForSelect-label'}>{this.props.label}</p>
-                <div className={'InputForSelect-wrapper'} onClick={this.handleClickWrapper} ref={this.wrapperDiv}>
+                {this.props.label &&
+                    <p className={'inputForSelect-label'}>{this.props.label}</p>
+                }
+                <div 
+                    className={'InputForSelect-wrapper'} 
+                    onClick={this.handleClickWrapper} 
+                    ref={this.wrapperDiv}
+                >
                     <div
                         className={classNames(
                             'inputForSelect',
@@ -50,7 +56,10 @@ class InputForSelect extends React.Component {
                                 </div>
                             )
                         }
-                        {this.state.focused ? <ArrowUpIcon /> : <ArrowDownIcon />} {/*Icon not clicking. WHY??!*/ }
+                        {this.state.focused 
+                            ? <ArrowUpIcon className={'arrow-icon arrowUp-icon'} /> 
+                            : <ArrowDownIcon className={'arrow-icon arrowDown-icon'} />
+                        }
                         <div className={'inputForSelect-cover'} />
                     </div>
 
@@ -86,5 +95,3 @@ class InputForSelect extends React.Component {
         }
     }
 }
-
-export default InputForSelect;

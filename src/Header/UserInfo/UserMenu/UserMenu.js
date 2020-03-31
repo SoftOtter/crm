@@ -1,5 +1,5 @@
 import React from 'react';
-import MoreInfoIcon from './icons/MoreInfoIcon';
+import MoreInfoIcon from '../../../icons/MoreInfoIcon';
 
 class UserMenu extends React.Component {
     render() {

@@ -1,7 +1,9 @@
 import React from 'react';
-import MoreInfoIcon from '../icons/MoreInfoIcon';
-import Button from '../Button/Button';
+import MoreInfoIcon from '../../icons/MoreInfoIcon';
+import Button from '../../UI kit/button/Button';
 import './workingShiftTile-style.css';
+import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
+import { dataForMenu } from '../../UI kit/dropDownMenu/dataForMenu';
 
 class WorkingShiftTile extends React.Component {
 	constructor(props) {
@@ -20,11 +22,15 @@ class WorkingShiftTile extends React.Component {
 			<div className='tiles working-shift'>
 				<div className='tiles-header'>
 					<h2 className='tiles-title'>Смена с 10:00 до 17:00</h2>
-					<button className='btn-more'>
-						<div className='more-info-icon'>
-							<MoreInfoIcon />
-						</div>
-					</button>
+					<div className={'buttonWithMenu-wrapper'}>
+						<ButtonIcon 
+							className = {'WorkingShiftTile-button'}
+							icon = {<MoreInfoIcon className={'iconForButton WorkingShiftTileIcon'}/>}
+							textForTooltip = {'More information'}
+							dataForDropDownMenu = {dataForMenu}
+						/>
+					</div>
+					
 				</div>
 
 				{/* On 994px formatting brokes */}

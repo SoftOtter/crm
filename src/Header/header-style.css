@@ -5,7 +5,7 @@ header {
     height: 52px;
     width: 100%;
     background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 6px rgba(0,0,0,.2);
     box-sizing: border-box;
     z-index: 100;
 }
@@ -13,7 +13,7 @@ header {
 header .left-part{
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 20px;
 }
 
 header .btn-burger {
@@ -56,29 +56,11 @@ header .left-part .date {
     font-size: 14px;
     line-height: 20px;
     font-family: 'IBM Plex Sans';
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
-header .left-part .dollar-rate {
-    margin-left: 20px;
-}
-
-header .left-part .dollar-rate span {
-    color: #82869e;
-    font-size: 14px;
-    line-height: 20px;
-    font-family: 'IBM Plex Sans';
-}
-
-header .left-part .euro-rate {
-    margin-left: 20px;
-}
-
-header .left-part .euro-rate span {
-    color: #82869e;
-    font-size: 14px;
-    line-height: 20px;
-    font-family: 'IBM Plex Sans';
+header .left-part .rates-wrapper {
+    display: flex;
 }
 
 header .right-part {
@@ -92,28 +74,64 @@ header .right-part {
     margin-right: 24px;
 }
 
-header .right-part .btn-help {
-    margin-right: 33px;
+header .btn-help {
+    margin-right: 12px;
     color: #82869e;
-    font-size: 14px;
-    line-height: 20px;
-    font-family: 'IBM Plex Sans';
-    display: flex;
-    align-items: center;
 }
 
-header .right-part .btn-help svg {
-    width: 14px;
-    height: 14px;
-    margin-right: 7px;
-    margin-top: 1px;
+header .right-part .helpIcon {
     fill: #82869e;
+}
+
+header .right-part .user-info-wrapper {
+    position: relative;
 }
 
 header .right-part .user-info {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 52px;
+    padding: 0px 32px 0px 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+header .right-part .userDropDownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    border-radius: 0px;
+}
+
+header .right-part .userDropDownMenu .dropDownItem {
+    line-height: 40px;
+}
+
+header .right-part .user-info:hover:not(.userMenuFocused) {
+    background-color: rgba(83, 109, 254, 0.08);
+    box-shadow: inset 0px -2px #4b62e3;
+}
+
+header .right-part .userMenuFocused {
+    background-color: rgba(83, 109, 254, 0.08);
+    box-shadow: inset 0px -2px #4257c9;
+}
+
+.dropDown .onHoverUserMenu:hover{
+    box-shadow: inset 4px 0px #536dfe;
+    background-color: #fff;
+}
+
+/*.dropDownIcon/-Item are internal classes of DropDownMenu component*/
+.onHoverUserMenu:hover .dropDownIcon {
+    fill: #536dfe;
+}
+
+.onHoverUserMenu:hover .dropDownItem {
+    color: #536dfe;
 }
 
 header .right-part .user-icon-container {
@@ -121,7 +139,6 @@ header .right-part .user-icon-container {
 }
 
 header .right-part .info {
-    margin: 13px 17px 10px 0px;
     line-height: 15px;
 }
 
@@ -134,14 +151,6 @@ header .right-part .info .full-name {
 header .right-part .info .position {
     color: #82869e;
     font-size: 12px;
-}
-
-header .right-part .btn-user-menu {
-    margin-bottom: 10px;
-}
-
-header .right-part .more-info-icon svg{
-    fill: #383e5c;
 }
 
 header .right-part .aside-buttons {

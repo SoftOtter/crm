@@ -1,0 +1,46 @@
+.dropDown-wrapper {
+    padding: 8px 0 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 
+    0 8px 10px 1px rgba(0,0,0,.14), 
+    0 3px 14px 2px rgba(0,0,0,.12);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+    text-transform: none;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.dropDown {
+    padding-right: 16px;
+    max-height: 160px;
+    overflow: auto;
+}
+
+.dropDownItem-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropDownIcon {
+    padding-left: 16px;
+    fill: #82869e;
+}
+
+.dropDownItem {
+    color: #82869e;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans';
+    line-height: 30px;
+    padding-left: 16px;
+    padding-right: 8px;
+    display: block;
+}
+
+.dropDownItem-wrapper:hover {
+    background-color: #caced970;
+}

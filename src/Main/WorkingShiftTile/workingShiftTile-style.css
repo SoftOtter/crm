@@ -13,6 +13,10 @@ main .working-shift .tiles-header {
     flex-shrink: 0;
 }
 
+.button-icon .WorkingShiftTileIcon {
+    fill: #82869e;
+}
+
 main .working-shift .working-shift-content {
     display: flex;
     justify-content: center;

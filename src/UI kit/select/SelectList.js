@@ -1,7 +1,7 @@
 import React from 'react';
 import './selectList-style.css'
 
-class SelectList extends React.Component {
+export class SelectList extends React.Component {
     render() {
         const items = this.props.listItems.map(
             x => <span
@@ -13,11 +13,11 @@ class SelectList extends React.Component {
             </span>
         );
         return (
-            <div className={'selectList'}>
-                {items}
+            <div className={'selectList-wrapper'}>
+                <div className={'selectList'}>
+                    {items}
+                </div>
             </div>
         );
     }
 }
-
-export default SelectList;

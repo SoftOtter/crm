@@ -2,7 +2,7 @@
     color: #82869e;
     font-family: IBM Plex Sans;
     font-size: 14px;
-
+    display: flex;
 }
 
 .fieldForAmount-wrapper.error {
@@ -49,6 +49,12 @@
 .amount-btn:hover {
     background-color: #4b62e3;
     border-color: #4b62e3;
+    color: #fff;
+}
+
+.amount-btn:active {
+    background-color: #4257c9;
+    border-color: #4257c9;
     color: #fff;
 }
 

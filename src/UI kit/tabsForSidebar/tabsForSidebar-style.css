@@ -1,0 +1,107 @@
+.tabsForSidebar-wrapper {
+    display: flex;
+}
+
+.tabsButton {
+    display: flex;
+    width: 33.5%;
+    height: 36px;
+    border: 1px solid #c8cbd4;
+    color: #82869e;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans';
+    position: relative;
+
+}
+
+.tabButton-wrapper {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabsForSidebar-icon {
+    fill: #c8cbd4;
+}
+
+.leftTab {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: -1px;
+}
+
+.rightTab {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: -1px;
+}
+
+.sizeFixed {
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.smthNewIndicator {
+    position: relative;
+}
+
+.smthNewIndicator::after {
+    content: '';
+    z-index: 99;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ef4e76;
+    display: block;
+
+    position: absolute;
+    top: -4px;
+    right: -6px;
+
+}
+
+.tabsButton:hover {
+    color: #4b62e3;
+    border-color: #4b62e3;
+    z-index: 10;
+}
+
+.tabsButton:hover .tabsForSidebar-icon {
+    fill: #4b62e3;
+}
+
+.tabsButton:active {
+    color: #4257c9;
+    border: 1px solid #4257c9;
+    z-index: 11;
+}
+
+.tabsButton:active .tabsForSidebar-icon {
+    fill: #4257c9;
+}
+
+.chosen {
+    color: #536dfe;
+    background-color: rgba(83, 109, 254, 0.08);
+    border-color: #536dfe;
+    z-index: 5;
+    cursor: default;
+}
+
+.chosen .tabsForSidebar-icon {
+    fill: #536dfe;
+}
+
+.tabsButton:disabled {
+    border: 1px solid #e2e3e7;
+    color: #c5c7d0;
+    background-color: #e2e3e7;
+    cursor: default;
+    z-index: 1;
+}
+
+.tabsButton:disabled .tabsForSidebar-icon {
+    fill: #c5c7d0;
+}

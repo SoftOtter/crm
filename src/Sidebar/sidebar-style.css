@@ -67,89 +67,10 @@ aside .mini-aside .buttons .btn-notifications .indicator-icon {
 
 }
 
-aside .buttons {
+aside .tabsPlacement {
     display: flex;
     margin: 14px 15px 0px 16px;
 }
-
-aside .buttons svg {
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin: 10px auto;
-    fill: #82869e;
-}
-
-aside .buttons svg .st0 {
-    fill: none;
-}
-
-aside .buttons svg .st1 { 
-    fill: #FFFFFF;
-    stroke: #000000;
-    stroke-miterlimit: 10;
-}
-
-aside .buttons svg .st2 {
-    fill: none;
-}
-
-aside .buttons svg .st3 {
-    fill: #FFFFFF;
-}
-
-aside .buttons input {
-    display: none;
-}
-
-aside .buttons label {
-    width: 33%;
-    height: 36px;
-    border: 1px solid #c8cbd4;
-    z-index: 1;
-    cursor: pointer;
-}
-
-aside .aside .buttons label:first-of-type {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    margin-right: -1px;
-}
-
-aside .aside .buttons label:last-of-type {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    margin-left: -1px;
-}
-
-aside .buttons .aside-button[type="radio"]:checked + label {
-    border-color: #536dfe;
-    z-index: 5;
-    background-color: rgba(83, 109, 254, 0.08);
-}
-
-aside .buttons .aside-button[type="radio"]:checked + label svg{
-    fill: #536dfe;
-}
-
-aside .aside .buttons .btn-notifications {
-    position: relative;
-}
-
-aside .aside .buttons .btn-notifications .indicator-icon {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #ef4e76;
-    display: inline-block;
-
-    position: absolute;
-    top: 9px;
-    right: 24px;
-
-    display: none;
-}
-
 
 aside .messages {
     margin: 24px 8px 0px 8px;
@@ -231,18 +152,18 @@ aside .message .message-content {
 aside .btn-all-messages-container {
     position: absolute;
     bottom: 0px;
-    width: 100%;
+    left: 0px;
+    right: 0px;
     height: 150px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8435749299719888) 35%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
 }
 
 aside .btn-all-messages-container .btn-all-messages {
-    color: #4b6bf7;
-    font-size: 14px;
-    line-height: 20px;
-    position: absolute;
-    bottom: 53px;
-    left: 50%;
-    margin-left: -52px;
+    height: 100%;
+    width: 100%
 }

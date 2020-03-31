@@ -1,0 +1,19 @@
+.minorButton {
+    height: 40px;
+    border: 1px solid #536dfe;
+    border-radius: 4px;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+
+.buttonWithIcon:disabled {
+    border-color: #e2e3e7;
+}
+
+.buttonWithIcon:hover {
+    border-color: #4b62e3;
+}
+
+.buttonWithIcon:active {
+    border-color: #4257c9;
+}

@@ -1,0 +1,38 @@
+.buttonIcon-wrapper {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.button-icon {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.button-icon .iconForButton {
+    fill: #536dfe;
+}
+
+.button-icon:hover .iconForButton{
+    fill: #4b62e3;
+}
+
+.button-icon:active .iconForButton{
+    fill: #4257c9;
+}
+
+.svgBtnIcon-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

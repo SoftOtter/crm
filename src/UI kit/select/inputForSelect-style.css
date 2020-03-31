@@ -18,7 +18,7 @@
     border-radius: 4px;
     color: #383e5c;
     font-size: 14px;
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans';
     line-height: 40px;
     padding: 0 8px 0 12px;
     cursor: pointer;
@@ -46,7 +46,7 @@
     cursor: default;
 }
 
-.inputForSelect svg {
+.inputForSelect .arrow-icon {
     margin-left: 8px;
     flex-shrink: 0;
 }
@@ -54,7 +54,7 @@
 .inputForSelect-label {
     color: #82869e;
     font-size: 14px;
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans';
     text-transform: uppercase;
     margin-bottom: 8px;
 }
@@ -65,36 +65,22 @@
     overflow: hidden;
 }
 
-.selectList {
-    padding: 20px 16px 16px 0px;
-    background-color: #fff;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 3px 2px 7px 3px rgba(0, 0, 0, 0.08);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    max-height: 100px;
-    overflow: auto;
-}
-
-.selectList .listItem {
-    color: #82869e;
-    font-size: 14px;
-    font-family: IBM Plex Sans;
-    line-height: 24px;
-    padding-left: 16px;
-    display: block;
-}
-
-.selectList .listItem:hover {
-    background-color: #caced9;
-}
-
 .inputForSelect-cover {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.arrowDown-icon {
+    fill: #c8cbd4;
+}
+
+.inputForSelect:hover .arrowDown-icon {
+    fill: #4b62e3;
+}
+
+.inputForSelect.inputForSelect-focused .arrowUp-icon {
+    fill: #4257c9;
 }

@@ -4,54 +4,16 @@ class MessageIcon extends React.Component {
     render() {
         return (
             <svg 
-                version="1.1" 
-                id="Слой_1" 
-                xmlns="http://www.w3.org/2000/svg" 
-                xmlnsXlink="http://www.w3.org/1999/xlink" 
-                x="0px" 
-                y="0px"
+                width="16" 
+                height="16" 
                 viewBox="0 0 16 16" 
-                xmlSpace="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                className={this.props.className}
             >
-                <g>
-                    <g>
-                        <g>
-                            <g>
-                                <path className="st0" d="M2.4,12.5c-0.3,0-0.5-0.2-0.5-0.5V4c0-0.3,0.2-0.5,0.5-0.5h12c0.3,0,0.5,0.2,0.5,0.5v8
-                                    c0,0.3-0.2,0.5-0.5,0.5H2.4z"/>
-                            </g>
-                        </g>
-                        <g>
-                            <g>
-                                <path d="M14.4,4v8h-12V4H14.4 M14.4,3h-12c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V4C15.4,3.4,15,3,14.4,3
-                                    L14.4,3z"/>
-                            </g>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <polyline className="st0" points="2.4,4 8.4,8 14.4,4 			"/>
-                        </g>
-                        <g>
-                            <polygon points="8.4,8.6 2.1,4.4 2.7,3.6 8.4,7.4 14.1,3.6 14.7,4.4 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="1.3" y="9" transform="matrix(0.7144 -0.6997 0.6997 0.7144 -5.2767 6.1005)" width="7" height="1"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="11.5" y="6.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.2262 11.2409)" width="1" height="6.9"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path className="st1" d="M11.4,6"/>
-                        </g>
-                    </g>
-                </g>
+                <path d="M14.4 4V12H2.4V4H14.4ZM14.4 3H2.4C1.8 3 1.4 3.4 1.4 4V12C1.4 12.6 1.8 13 2.4 13H14.4C15 13 15.4 12.6 15.4 12V4C15.4 3.4 15 3 14.4 3Z" />
+                <path d="M8.4 8.6L2.1 4.4L2.7 3.6L8.4 7.4L14.1 3.6L14.7 4.4L8.4 8.6Z" />
+                <path d="M6.95012 6.72259L1.94932 11.6205L2.64902 12.3349L7.64982 7.43699L6.95012 6.72259Z" />
+                <path d="M9.92586 6.71546L9.21876 7.42256L14.0978 12.3016L14.8049 11.5945L9.92586 6.71546Z" />
             </svg>
         );
     }

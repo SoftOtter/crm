@@ -4,7 +4,11 @@ main .my-people .content {
 }
 
 main .my-people .content .user-icon-container {
-    margin-top: 20px;
+    margin-top: 8px;
+}
+
+.button-icon .myPeopleTileIcon {
+    fill: #82869e;
 }
 
 main .my-people .content .full-name {

@@ -11,6 +11,13 @@
     />
     <title>Sellers-Dashboard</title>
     <link rel="stylesheet" href="%PUBLIC_URL%/css/reset.css">
+
+    <script>
+      function CBR_XML_Daily_Ru(rates) {
+        window.currencyRate = rates;
+      }
+    </script>
+    <script src="//www.cbr-xml-daily.ru/daily_jsonp.js"></script>
   </head>
   <body>
     <div id="root" class="site"></div>

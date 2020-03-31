@@ -11,7 +11,8 @@ class CalendarIcon extends React.Component {
                 x="0px" 
                 y="0px"
                 viewBox="0 0 16 16" 
-                xmlSpace="preserve"
+				xmlSpace="preserve"
+				className={this.props.className}
             >
 				<path d="M14,4L14,4v10L2,14V4H14 M14,3H2C1.4,3,1,3.4,1,4v10c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V4C15,3.4,14.6,3,14,3L14,3z"/>
 				<g>

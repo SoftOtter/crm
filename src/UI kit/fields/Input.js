@@ -22,7 +22,9 @@ class Input extends React.Component {
 
         return (
             <label htmlFor={this.props.id}>
-                <p className={'input-label'}>{this.props.label}</p>
+                <p className={'input-label'}>
+                    {this.props.label}
+                </p>
                 <div className={classNames(
                     'input', 
                     this.props.className, 

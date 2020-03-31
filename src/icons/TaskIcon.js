@@ -4,140 +4,39 @@ class TaskIcon extends React.Component {
     render() {
         return (
             <svg 
-                version="1.1" 
-                id="Слой_1" 
-                xmlns="http://www.w3.org/2000/svg" 
-                xmlnsXlink="http://www.w3.org/1999/xlink" 
-                x="0px" 
-                y="0px"
+                width="16" 
+                height="16" 
                 viewBox="0 0 16 16" 
-                xmlSpace="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                className={this.props.className}
             >
-                <g>
-                    <g>
-                        <path d="M13.5,2h-12c-0.6,0-1,0.4-1,1v10c0,0.6,0.4,1,1,1h8.4c0-0.3,0-0.7,0-1H1.5V3h12v5.6c0.4,0.2,0.7,0.4,1,0.8V3
-                            C14.5,2.4,14.1,2,13.5,2z"/>
-                    </g>
-                    <g>
-                        <g>
-                            <path className="st3" d="M3,3.5"/>
-                        </g>
-                        <g>
-                            <polygon points="3.5,1 2.5,1 2.5,4 3.5,4 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="1.5" y="5" className="st3" width="12" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="13.5,5 1.5,5 1.5,6 13.5,6 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path className="st3" d="M12,3.5"/>
-                        </g>
-                        <g>
-                            <polygon points="12.5,1 11.5,1 11.5,4 12.5,4 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="2.5" y="7" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="3.5,7 2.5,7 2.5,8 3.5,8 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="2.5" y="9" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="3.5,9 2.5,9 2.5,10 3.5,10 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="2.5" y="11" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="3.5,11 2.5,11 2.5,12 3.5,12 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="4.5" y="7" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="5.5,7 4.5,7 4.5,8 5.5,8 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="4.5" y="9" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="5.5,9 4.5,9 4.5,10 5.5,10 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="4.5" y="11" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="5.5,11 4.5,11 4.5,12 5.5,12 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="6.5" y="7" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="7.5,7 6.5,7 6.5,8 7.5,8 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="8.5" y="7" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="9.5,7 8.5,7 8.5,8 9.5,8 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="6.5" y="9" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="7.5,9 6.5,9 6.5,10 7.5,10 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect x="6.5" y="11" className="st3" width="1" height="1"/>
-                        </g>
-                        <g>
-                            <polygon points="7.5,11 6.5,11 6.5,12 7.5,12 			"/>
-                        </g>
-                    </g>
-                    <g>
-                        <path className="st1" d="M13.9,9.5"/>
-                    </g>
-                    <g>
-                        <g>
-                            <circle className="st2" cx="12" cy="11.5" r="3"/>
-                        </g>
-                        <g>
-                            <path d="M12,9c1.4,0,2.5,1.1,2.5,2.5S13.4,14,12,14s-2.5-1.1-2.5-2.5S10.6,9,12,9 M12,8c-1.9,0-3.5,1.6-3.5,3.5S10.1,15,12,15
-                                s3.5-1.6,3.5-3.5S13.9,8,12,8L12,8z"/>
-                        </g>
-                    </g>
-                    <g>
-                        <polygon points="12.6,12.9 11.5,11.7 11.5,10 12.5,10 12.5,11.3 13.4,12.1 		"/>
-                    </g>
-                </g>
+                <path d="M13.5 2H1.5C0.9 2 0.5 2.4 0.5 3V13C0.5 13.6 0.9 14 1.5 14H9.9C9.9 13.7 9.9 13.3 9.9 13H1.5V3H13.5V8.6C13.9 8.8 14.2 9 14.5 9.4V3C14.5 2.4 14.1 2 13.5 2Z"  />
+                <path d="M3.5 1H2.5V4H3.5V1Z"  />
+                <path d="M13.5 5H1.5V6H13.5V5Z" fill="white"/>
+                <path d="M13.5 5H1.5V6H13.5V5Z"  />
+                <path d="M12.5 1H11.5V4H12.5V1Z"  />
+                <path d="M3.5 7H2.5V8H3.5V7Z" fill="white"/>
+                <path d="M3.5 7H2.5V8H3.5V7Z"  />
+                <path d="M3.5 9H2.5V10H3.5V9Z" fill="white"/>
+                <path d="M3.5 9H2.5V10H3.5V9Z"  />
+                <path d="M3.5 11H2.5V12H3.5V11Z" fill="white"/>
+                <path d="M3.5 11H2.5V12H3.5V11Z"  />
+                <path d="M5.5 7H4.5V8H5.5V7Z" fill="white"/>
+                <path d="M5.5 7H4.5V8H5.5V7Z"  />
+                <path d="M5.5 9H4.5V10H5.5V9Z" fill="white"/>
+                <path d="M5.5 9H4.5V10H5.5V9Z"  />
+                <path d="M5.5 11H4.5V12H5.5V11Z" fill="white"/>
+                <path d="M5.5 11H4.5V12H5.5V11Z"  />
+                <path d="M7.5 7H6.5V8H7.5V7Z" fill="white"/>
+                <path d="M7.5 7H6.5V8H7.5V7Z"  />
+                <path d="M9.5 7H8.5V8H9.5V7Z" fill="white"/>
+                <path d="M9.5 7H8.5V8H9.5V7Z"  />
+                <path d="M7.5 9H6.5V10H7.5V9Z" fill="white"/>
+                <path d="M7.5 9H6.5V10H7.5V9Z"  />
+                <path d="M7.5 11H6.5V12H7.5V11Z" fill="white"/>
+                <path d="M7.5 11H6.5V12H7.5V11Z"  />
+                <path d="M12 9C13.4 9 14.5 10.1 14.5 11.5C14.5 12.9 13.4 14 12 14C10.6 14 9.5 12.9 9.5 11.5C9.5 10.1 10.6 9 12 9ZM12 8C10.1 8 8.5 9.6 8.5 11.5C8.5 13.4 10.1 15 12 15C13.9 15 15.5 13.4 15.5 11.5C15.5 9.6 13.9 8 12 8Z"  />
+                <path d="M12.6 12.9L11.5 11.7V10H12.5V11.3L13.4 12.1L12.6 12.9Z"  />
             </svg>
 
         );

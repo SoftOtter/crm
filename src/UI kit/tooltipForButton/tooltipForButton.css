@@ -1,0 +1,50 @@
+.tooltipForButton-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, .5em);
+
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 30px;
+    max-width: 150px;
+    
+    opacity: 0;
+
+    z-index: 1000;
+}
+
+.tooltipForButton-text {
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    white-space: nowrap;
+    
+    border-radius: 4px;
+    background-color: #383e5c;
+    
+    padding: 5px 8px;
+}
+
+.arrowForTooltip-container {
+    display: flex;
+    align-self: center;
+}
+
+.arrowForTooltip-container .arrowForTooltip {
+    fill: #383e5c;
+}
+
+.tooltipForButton-wrapper.show {
+    animation: tooltip-appear 300ms ease-out forwards;
+    animation-delay: .4s;
+}
+
+@keyframes tooltip-appear {
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}

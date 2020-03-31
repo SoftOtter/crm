@@ -1,0 +1,17 @@
+.rate-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    color: #82869e;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}
+
+.currencyIcon {
+    fill: #82869e;
+}
+
+.currencyRate {
+    margin-left: 4px;
+}

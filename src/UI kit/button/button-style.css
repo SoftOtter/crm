@@ -1,0 +1,52 @@
+.Button {
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+}
+
+.Button_blue {
+    background-color: #536dfe;
+    color: #fff;
+}
+
+.Button_white {
+    border: 1px solid #536dfe;
+    color: #536dfe;
+    background-color: #fff;
+}
+
+.Button.Button_blue:disabled {
+    border-color: #e2e3e7;
+    background-color: #e2e3e7;
+    color: #c5c7d0;
+}
+
+.Button.Button_blue:hover {
+    background-color: #4b62e3;
+    border-color: #4b62e3;
+    color: #fff;
+}
+
+.Button.Button_blue:active {
+    border-color: #4257c9;
+    background-color: #4257c9;
+    caret-color: #4257c9;
+}
+
+.Button.Button_white:disabled {
+    border-color: #e2e3e7;
+    color: #c5c7d0;
+}
+
+.Button.Button_white:hover {
+    border-color: #4b62e3;
+    color: #4b62e3;
+}
+
+.Button.Button_white:active {
+    border-color: #4257c9;
+    color: #4257c9;
+    caret-color: #4257c9;
+}

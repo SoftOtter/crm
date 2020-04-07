@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import './input-style.css';
-import ErrorIcon from '../../icons/ErrorIcon';
+import { ErrorIcon } from '../../icons/ErrorIcon';
 
 class Input extends React.Component {
     constructor(props) {

@@ -1,0 +1,78 @@
+.AddNewSale__bonusButton{
+    height: 24px;
+    margin-bottom: 32px;
+}
+
+.AddNewSale__goodsInfo {
+    display: flex;
+}
+
+.AddNewSale__goodsInfoSelect {
+    width: 200px;
+    margin-right: 24px;
+}
+
+.AddNewSale__goodsInfo :last-child {
+    margin-right: 0px;
+}
+
+.AddNewSale__devider {
+    width: 100%;
+    height: 1px;
+    background-color: #e2e3e7;
+    margin: 24px 0 16px;
+}
+
+.AddNewSale__salesInfo {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.AddNewSale__salesInfoDataPicker {
+    width: 200px;
+    margin-right: 24px;
+}
+
+.AddNewSale__salesInfoAmountInput {
+    margin: 0px 69px 0px 45px;
+}
+
+.AddNewSale__salesInfoAmountInput-height {
+    height: 40px;
+}
+
+.AddNewSale__salesInfoAmountInput-buttonWidth {
+    width: 32px;
+}
+
+.AddNewSale__salesInfoAmountInput-inputWidth {
+    width: 46px;
+}
+
+.AddNewSale__salesInfoPriceInput {
+    width: 200px;
+    margin-right: 8px;
+}
+
+.AddNewSale__salesInfoCurrencySelect {
+    margin-top: 32px;
+    width: 72px;
+}
+
+.AddNewSale__additionalInfo {
+    display: flex;
+}
+
+.AddNewSale__additionalInfoGallery {
+    margin-right: 24px;
+}
+
+.AddNewSale__additionalInfoSallerComment {
+}
+
+.AddNewSale__additionalInfo-sizes {
+    min-width: 323px;
+    min-height: 122px;
+    max-width: 390px;
+    max-height: 280px;
+}

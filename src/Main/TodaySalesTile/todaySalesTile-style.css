@@ -14,18 +14,11 @@ main .todays-sales .tables-title {
     line-height: 25px;
 }
 
-main .todays-sales .tables-header .btn-add-sales svg{
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
+.TodaySalesTile__ButtonAddSaleIcon {
     fill: #fff;
 }
 
-.btn-add-sales {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    
+.TodaySalesTile__ButtonAddSale {
     padding: 0 20px;
 }
 

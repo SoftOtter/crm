@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import ArrowDownIcon from '../../icons/ArrowDownIcon';
+import { ArrowDownIcon } from '../../icons/ArrowDownIcon';
 import './inputForSelect-style.css';
-import ArrowUpIcon from '../../icons/ArrowUpIcon';
+import { ArrowUpIcon } from '../../icons/ArrowUpIcon';
 import { SelectList } from './SelectList';
 
 export class InputForSelect extends React.Component {
@@ -28,7 +28,7 @@ export class InputForSelect extends React.Component {
             dataItem => dataItem.value === this.state.selectedItem);
 
         return (
-            <div>
+            <div className={this.props.className}>
                 {this.props.label &&
                     <p className={'inputForSelect-label'}>{this.props.label}</p>
                 }
@@ -40,7 +40,6 @@ export class InputForSelect extends React.Component {
                     <div
                         className={classNames(
                             'inputForSelect',
-                            this.props.className,
                             this.state.focused && 'inputForSelect-focused'
                         )}
                     >

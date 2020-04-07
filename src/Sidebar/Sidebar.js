@@ -3,7 +3,8 @@ import './sidebar-style.css';
 import AsideModeButtons from './AsideModeButtons/AsideModeButtons';
 import Messages from './Messages/Messages';
 import AllMessagesButton from './AllMessagesButton/AllMessagesButton';
-import TabsForSidebar from '../UI kit/tabsForSidebar/TabsForSidebar';
+import { TabsForSidebar } from '../UI kit/tabsForSidebar/TabsForSidebar';
+import { Svg } from '../icons/Svg/Svg';
 
 class Sidebar extends React.Component {
     render() {

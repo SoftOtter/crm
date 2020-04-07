@@ -3,6 +3,7 @@
     font-family: IBM Plex Sans;
     font-size: 14px;
     display: flex;
+    height: 28px;
 }
 
 .fieldForAmount-wrapper.error {
@@ -12,7 +13,7 @@
 }
 
 .amount-btn {
-    height: 28px;
+    height: 100%;
     width: 24px;
     box-sizing: border-box;
     border: 1px solid #c8cbd4;
@@ -59,7 +60,7 @@
 }
 
 .amount-input {
-    height: 28px;
+    height: 100%;
     width: 32px;
     border-width: 1px;
     border-style: solid;

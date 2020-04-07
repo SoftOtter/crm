@@ -1,8 +1,8 @@
 import React from 'react';
-import NotificationIcon from '../../icons/NotificationIcon';
-import MessageIcon from '../../icons/MessageIcon';
+import { NotificationIcon } from '../../icons/NotificationIcon';
+import { MessageIcon } from '../../icons/MessageIcon';
 
-class MobileAsideButtons extends React.Component {
+export class MobileAsideButtons extends React.Component {
     render() {
         return (<>
             {/* Buttons (task and messages) on mobile screen*/}
@@ -19,5 +19,3 @@ class MobileAsideButtons extends React.Component {
         </>);
     }
 }
-
-export default MobileAsideButtons;

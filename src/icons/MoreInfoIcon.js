@@ -1,14 +1,17 @@
 import React from 'react';
+import { Svg } from './Svg/Svg';
 
-class MoreInfoIcon extends React.Component {
+export class MoreInfoIcon extends React.Component {
     render() {
+        const {children, ...restProps} = this.props;
         return (
-            <svg 
+            <svg
                 className={this.props.className}
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
+                {...restProps}
             >
                 <path d="M2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6C0.89543 6 0 6.89543 0 8C0 9.10457 0.89543 10 2 10Z" />
                 <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" />
@@ -17,5 +20,3 @@ class MoreInfoIcon extends React.Component {
         );
     }
 }
-
-export default MoreInfoIcon;

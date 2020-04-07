@@ -1,0 +1,20 @@
+export const dataForSelect_modelOfGoods_fridges = [
+    { text: 'HB25FSNAAARU', value: 1, categoryId: 1 },
+    { text: 'HB25FSSAAARU', value: 2, categoryId: 1},
+    { text: 'HB18FGSAAARU', value: 3, categoryId: 1},
+    { text: 'HB18FGWAAARU', value: 4, categoryId: 1 },
+    { text: 'A3FE742CGBJRU', value: 5, categoryId: 1 },
+    { text: 'A3FE742CGWJRU', value: 6, categoryId: 1 },
+    { text: '521DM6RU', value: 7, categoryId: 1 },
+    { text: 'A3FE742CMJRU', value: 8, categoryId: 1 },
+    { text: 'A2F637CGWG', value: 9, categoryId: 1 },
+    { text: 'A2F637CGBG', value: 10, categoryId: 1 },
+    { text: 'A2F737CBXG', value: 11, categoryId: 1 },
+    { text: 'C4F744CCG', value: 12, categoryId: 1 },
+    { text: 'C4F744CGG', value: 13, categoryId: 1 },
+    { text: 'C4F744CMG', value: 14, categoryId: 1 },
+    { text: 'A2F737CLBG', value: 15, categoryId: 1 },
+    { text: 'A2F737CDBG', value: 16, categoryId: 1 },
+    { text: 'C4F744CWG', value: 17, categoryId: 1 },
+    { text: 'C2F637CGWG', value: 18, categoryId: 1 }
+];

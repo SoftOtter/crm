@@ -1,9 +1,10 @@
 import React from 'react';
+import { Svg } from '../../../../icons/svg';
 
 class ReplyIcon extends React.Component {
     render() {
         return (
-            <svg 
+            <svg
                 version="1.1" 
                 id="Слой_1" 
                 xmlns="http://www.w3.org/2000/svg" 

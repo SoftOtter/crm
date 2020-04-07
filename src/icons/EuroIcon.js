@@ -1,10 +1,11 @@
 import React from 'react';
+import { Svg } from './Svg/Svg';
 
 export class EuroIcon extends React.Component {
     render() {
         const {children, ...restProps} = this.props;
         return (
-            <svg 
+            <svg
                 width="16" 
                 height="16" 
                 viewBox="0 0 16 16"

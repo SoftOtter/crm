@@ -4,15 +4,19 @@ import classNames from 'classnames';
 
 export class MajorButton extends React.Component {
     render() {
+        const { icon, buttonText, className, children, ...rest } = this.props;
         return (
-            <button className={classNames('majorButton', this.props.className)}>
+            <button 
+                className={classNames('majorButton', className)}
+                {...rest}
+            >
+            {icon &&
                 <div className={'majorButton-iconContainer'}>
-                    {this.props.icon &&
-                        this.props.icon
-                    }
+                    {icon}
                 </div>
-
-                <span>{this.props.buttonText}</span>
+            }
+            
+            <span>{buttonText}</span>
             </button>
         );
     }

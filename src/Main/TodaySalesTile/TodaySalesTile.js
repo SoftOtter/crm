@@ -1,18 +1,35 @@
 import React from 'react';
 import './todaySalesTile-style.css';
-import Button from '../../UI kit/button/Button';
-import PlusInCircleIcon from '../../icons/PlusInCircleIcon';
+import { MajorButton } from '../../UI kit/majorButton/MajorButon';
+import { AddIcon } from '../../icons/AddIcon';
+import { PopUpTwoButtons } from '../../popups/PopUpTwoButtons/PopUpTwoButtons';
+import { AddNewSale } from '../../popups/AddNewSale/AddNewSale';
 
 class TodaySalesTile extends React.Component {
+	constructor (props) {
+		super (props);
+
+		this.state = {
+			isPopUpOpen: false
+		}
+	}
     render() {
         return (
             <div className='tiles todays-sales'>
 				<div className='tables-header'>
 					<h2 className='tables-title'>Продажи сегодня</h2>
-					<Button type={'filled'} className='btn-add-sales'>
-						<PlusInCircleIcon />
-						<span>Добавить продажу</span>
-					</Button>
+					<MajorButton
+						buttonText = {'Добавить продажу'}
+						className={'TodaySalesTile__ButtonAddSale'}
+						icon={<AddIcon className={'TodaySalesTile__ButtonAddSaleIcon'}/>}
+						onClick={this.handleClickAddSale}
+                	/>
+
+					<AddNewSale
+						isOpen={this.state.isPopUpOpen}
+						closePopUp={this.closePopUp}
+					/>
+
 				</div>
 
 		    	<table>
@@ -50,7 +67,20 @@ class TodaySalesTile extends React.Component {
 		    	</table>
 		    </div>
         );
-    }
+	}
+	
+	handleClickAddSale = () => {
+		this.setState({
+			isPopUpOpen: true
+		})
+	}
+
+	closePopUp = () => {
+		this.setState({
+			isPopUpOpen: false
+		})
+	}
+
 }
 
 export default TodaySalesTile;

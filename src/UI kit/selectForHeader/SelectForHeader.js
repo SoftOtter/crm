@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import ArrowDownIcon from '../../icons/ArrowDownIcon';
+import { ArrowDownIcon } from '../../icons/ArrowDownIcon';
 import './selectForHeader-style.css';
-import ArrowUpIcon from '../../icons/ArrowUpIcon';
+import { ArrowUpIcon } from '../../icons/ArrowUpIcon';
 import { SelectListHeader } from './SelectListHeader.js';
 
 export class SelectForHeader extends React.Component {
@@ -28,7 +28,7 @@ export class SelectForHeader extends React.Component {
             dataItem => dataItem.value === this.state.selectedItem);
 
         return (
-            <div>
+            <div className={this.props.className}>
                 {this.props.label &&
                     <p className={'selectForHeader-label'}>{this.props.label}</p>
                 }
@@ -40,7 +40,6 @@ export class SelectForHeader extends React.Component {
                     <div
                         className={classNames(
                             'selectForHeader',
-                            this.props.className,
                             this.state.focused && 'selectForHeader-focused'
                         )}
                     >

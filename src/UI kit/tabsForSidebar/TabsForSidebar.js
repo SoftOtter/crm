@@ -1,14 +1,13 @@
 import React from 'react';
-import MessageIcon from '../../icons/MessageIcon';
-import TaskIcon from '../../icons/TaskIcon';
-import NotificationIcon from '../../icons/NotificationIcon';
+import { MessageIcon } from '../../icons/MessageIcon';
+import { TaskIcon } from '../../icons/TaskIcon';
+import { NotificationIcon } from '../../icons/NotificationIcon';
 import classNames from 'classnames';
 import './tabsForSidebar-style.css';
-import TooltipForButton from '../tooltipForButton/TooltipForButton';
 import { TabButton } from './TabButton';
 
 
-class TabsForSidebar extends React.Component {
+export class TabsForSidebar extends React.Component {
     constructor(props) {
         super(props)
 
@@ -86,5 +85,3 @@ class TabsForSidebar extends React.Component {
         return defaultTab;
     }
 }
-
-export default TabsForSidebar;

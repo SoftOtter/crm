@@ -1,5 +1,5 @@
 import React from 'react';
-import { dataForUserMenu } from '../../UI kit/dropDownMenu/dataForUserMenu';
+import { dataForUserMenu } from '../../data/dataForUserMenu';
 import { DropDownMenu } from '../../UI kit/dropDownMenu/DropDownMenu';
 import classNames from 'classnames';
 

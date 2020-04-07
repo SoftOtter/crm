@@ -1,9 +1,10 @@
 import React from 'react';
-import MoreInfoIcon from '../../icons/MoreInfoIcon';
+import { MoreInfoIcon } from '../../icons/MoreInfoIcon';
 import Button from '../../UI kit/button/Button';
 import './workingShiftTile-style.css';
 import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
-import { dataForMenu } from '../../UI kit/dropDownMenu/dataForMenu';
+import { dataForMenu } from '../../data/dataForMenu';
+import { MajorButton } from '../../UI kit/majorButton/MajorButon';
 
 class WorkingShiftTile extends React.Component {
 	constructor(props) {
@@ -22,15 +23,12 @@ class WorkingShiftTile extends React.Component {
 			<div className='tiles working-shift'>
 				<div className='tiles-header'>
 					<h2 className='tiles-title'>Смена с 10:00 до 17:00</h2>
-					<div className={'buttonWithMenu-wrapper'}>
-						<ButtonIcon 
-							className = {'WorkingShiftTile-button'}
-							icon = {<MoreInfoIcon className={'iconForButton WorkingShiftTileIcon'}/>}
-							textForTooltip = {'More information'}
-							dataForDropDownMenu = {dataForMenu}
-						/>
-					</div>
-					
+					<ButtonIcon 
+						className = {'WorkingShiftTile-button'}
+						icon = {<MoreInfoIcon className={'iconForButton WorkingShiftTileIcon'}/>}
+						textForTooltip = {'More information'}
+						dataForDropDownMenu = {dataForMenu}
+					/>
 				</div>
 
 				{/* On 994px formatting brokes */}
@@ -39,11 +37,12 @@ class WorkingShiftTile extends React.Component {
 					{this.renderLeavingTime()}
 				</div>
 
-				<Button className={'WorkingShiftTile__Button'} type={'filled'} onClick={this.handleClick}>
-					{this.state.buttonLabel}
-				</Button>
+				<MajorButton
+					buttonText = {this.state.buttonLabel}
+					className={'WorkingShiftTile__Button'}
+					onClick={this.handleClick}
+                />
 			</div>
-
 		);
 	}
 
@@ -81,6 +80,7 @@ class WorkingShiftTile extends React.Component {
 		);
 	}
 
+	//working day should be 8 hour?
 	handleClick = () => {
 		if (this.state.arrivingTime === null && this.state.leavingTime === null) {
 			const result = this.workingShiftCalc(10);

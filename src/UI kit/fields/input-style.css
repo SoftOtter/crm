@@ -73,7 +73,6 @@ input:disabled {
 /* On focus border should be blue. Error should dissapear after change. */
 .input.error {
     border-color: #ce135f;
-    
 }
 
 p.error {
@@ -81,6 +80,7 @@ p.error {
     font-size: 12px;
     margin-top: 4px;
     line-height: 14px;
+    white-space: pre;
 }
 
 .input-error-icon {

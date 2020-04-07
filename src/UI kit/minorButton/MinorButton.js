@@ -10,6 +10,7 @@ export class MinorButton extends React.Component {
                 className = {classNames('minorButton', this.props.className)}
                 icon = {this.props.icon}
                 buttonText = {this.props.buttonText}
+                onClick={this.props.onClick}
             />
         );
     }

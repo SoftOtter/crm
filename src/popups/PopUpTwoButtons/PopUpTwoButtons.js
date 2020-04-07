@@ -39,6 +39,7 @@ export class PopUpTwoButtons extends React.Component {
                             <MinorButton
                                 className={'popUp__button'}
                                 buttonText={this.props.cancelButtonTitle}
+                                onClick={this.handleClickForClose}
                             />
                         }
                         

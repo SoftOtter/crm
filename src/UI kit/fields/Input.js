@@ -42,9 +42,8 @@ class Input extends React.Component {
                     />
                     {icon}
                 </div>
-                {this.props.error &&
-                    <p className={'error'}>{this.props.error}</p>
-                }
+                <p className={'error'}>{this.props.error ? this.props.error : ' '}</p>
+                
             </label>
         );
     }

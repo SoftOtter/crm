@@ -18,6 +18,7 @@ import { MajorButton } from '../../UI kit/majorButton/MajorButon';
 import { MiniaturePhoto } from '../../UI kit/galleryForGoods/miniaturePhoto/MiniaturePhoto';
 import { dataForGoodsPhotoes } from '../../data/dataForGoodsPhotoes';
 import { GalleryForGoods } from '../../UI kit/galleryForGoods/GalleryForGoods';
+import { dataForGoodsPhotoes_two } from '../../data/dataForGoodsPhotoes_two';
 
 class NewSale extends React.Component {
     render() {
@@ -75,7 +76,7 @@ class NewSale extends React.Component {
 
                     <GalleryForGoods
                         label={'Photoes'}
-                        dataForGallery = {dataForGoodsPhotoes}
+                        dataForGallery = {dataForGoodsPhotoes_two}
                     />
                 </div>
             </div>

@@ -3,6 +3,11 @@
     margin-top: -5px;
 }
 
+.MiniaturePhoto__wrapper:hover .MiniaturePhoto__arrow {
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+}
+
 .MiniaturePhoto {
     margin-top: 8px;
     padding: 5px 2px 2px;
@@ -48,22 +53,38 @@
 }
 
 .MiniaturePhoto__arrow {
-    fill: #e2e3e7;
     position: absolute;
+    height: 35px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    padding: 6px 0px;
+    opacity: 0;
 }
 
-.MiniaturePhoto__arrow:hover {
+
+
+.MiniaturePhoto__arrow:hover .MiniaturePhoto__arrowIcon {
     fill: #c5c7d0;
 }
 
 .MiniaturePhoto__arrowUp {
-    top: -20px;
+    top: 0;
     right: 5px;
+    align-items: flex-start;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8435749299719888) 25%, rgba(255,255,255,1) 100%);
 }
 
 .MiniaturePhoto__arrowDown {
-    bottom: -20px;
+    bottom: 0px;
     right: 5px;
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8435749299719888) 25%, rgba(255,255,255,1) 100%);
+}
+
+.MiniaturePhoto__arrowIcon {
+    fill: #e2e3e7;
 }
 
 .MiniaturePhoto__photoesVisible {
@@ -76,12 +97,8 @@
 
 .MiniaturePhoto__photoesWrapper {
     position: absolute;
-    
     left: 5px;
     transition: top .5s ease-in-out;
-    top: -67px;
-    top: 5px;
-    
 }
 
 .MiniaturePhoto__image {

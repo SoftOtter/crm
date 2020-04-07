@@ -55,7 +55,7 @@ export class AddNewSale extends React.Component {
                 <div className={'AddNewSale__devider'}></div>
 
                 <div className={'AddNewSale__salesInfo'}>
-                    {/* DATA PICKER */}
+                    {/* DATA PICKER WILL ADDING LATER*/}
                     <Input
                         className={'AddNewSale__salesInfoDataPicker'}
                         label = {'Дата'}
@@ -77,7 +77,6 @@ export class AddNewSale extends React.Component {
                         className={'AddNewSale__salesInfoPriceInput'}
                         label = {'Цена реализации'}
                         placeholder = {'Enter smth'}
-                        error = {'Error!'}
                     />
 
                     <SelectForHeader

@@ -5,7 +5,10 @@ import classNames from 'classnames';
 export class ButtonWithIcon extends React.Component {
     render() {
         return (
-            <button className={classNames('buttonWithIcon', this.props.className)}>
+            <button 
+                className={classNames('buttonWithIcon', this.props.className)}
+                onClick={this.props.onClick}
+            >
                 {this.props.icon &&
                     <div className={'buttomWithIcon-iconContainer'}>
                         {this.props.icon}

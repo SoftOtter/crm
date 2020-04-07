@@ -1,6 +1,7 @@
 import React from 'react';
 import { MiniaturePhoto } from './miniaturePhoto/MiniaturePhoto';
 import './galleryForGoods-style.css'
+import classNames from 'classnames';
 
 export class GalleryForGoods extends React.Component {
     constructor (props) {
@@ -13,7 +14,7 @@ export class GalleryForGoods extends React.Component {
     render() {
         const selectedImage = this.props.dataForGallery.find(dataItem => this.state.selectedId === dataItem.value);
         return (
-            <div className={'GalleryForGoods__wrapper'}>
+            <div className={classNames('GalleryForGoods__wrapper', this.props.className)}>
                 {this.props.label &&
                     <p className={'GalleryForGoods__label'}>{this.props.label}</p>
                 }

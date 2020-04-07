@@ -1,6 +1,6 @@
 import React from 'react';
-import './fieldForAmount-style.css';
 import classNames from 'classnames';
+import './fieldForAmount-style.css';
 
 class FieldForAmount extends React.Component {
     constructor(props) {
@@ -13,26 +13,29 @@ class FieldForAmount extends React.Component {
         };
     }
 
+    static defaultProps = {
+        classes: {}
+    }
 
     render() {
         return (
-            <div>
+            <div className={this.props.className}>
                 <p className={'fieldForAmount-label'}>{this.props.label}</p>
 
-                <div className={classNames('fieldForAmount-wrapper', (this.state.result > this.props.upperBound) && 'error')}>
+                <div className={classNames('fieldForAmount-wrapper', (this.state.result > this.props.upperBound) && 'error', this.props.classes.wrapper)}>
                     <button 
-                        className={classNames('amount-btn minus-btn')} 
+                        className={classNames('amount-btn minus-btn', this.props.classes.button)} 
                         disabled={(this.state.result === '0') || (this.state.disableMinus)}
                         onClick={this.handleClickMinus}
                     >-</button>
                     <input 
-                        className={classNames('amount-input' )}
+                        className={classNames('amount-input', this.props.classes.input )}
                         value={this.state.result} 
                         onChange={this.onChangeResult}
                         onBlur={this.handleBlur}
                     />
                     <button 
-                        className={classNames('amount-btn plus-btn')}
+                        className={classNames('amount-btn plus-btn', this.props.classes.button)}
                         onClick={this.handleClickPlus}
                         disabled={((this.state.result === this.props.upperBound) || this.state.disablePlus)}
                     >+</button>

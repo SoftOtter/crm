@@ -8,6 +8,7 @@ import TodaySalesTile from './TodaySalesTile/TodaySalesTile';
 import MyMonthlyIncomeTile from './MyMonthlyIncomeTile/MyMonthlyIncomeTile';
 import NewSale from '../popups/NewSale/NewSale';
 import { PopUpTwoButtons } from '../popups/PopUpTwoButtons/PopUpTwoButtons';
+import { AddNewSale } from '../popups/AddNewSale/AddNewSale';
 
 class Main extends React.Component {
 	render() {

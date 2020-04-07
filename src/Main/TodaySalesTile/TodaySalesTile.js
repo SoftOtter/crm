@@ -3,6 +3,7 @@ import './todaySalesTile-style.css';
 import { MajorButton } from '../../UI kit/majorButton/MajorButon';
 import { AddIcon } from '../../icons/AddIcon';
 import { PopUpTwoButtons } from '../../popups/PopUpTwoButtons/PopUpTwoButtons';
+import { AddNewSale } from '../../popups/AddNewSale/AddNewSale';
 
 class TodaySalesTile extends React.Component {
 	constructor (props) {
@@ -24,15 +25,10 @@ class TodaySalesTile extends React.Component {
 						onClick={this.handleClickAddSale}
                 	/>
 
-					<PopUpTwoButtons
-						header={'Заголовок'}
-						cancelButtonTitle={'Отмена'}
-						submitButtonTitle={'Добавить'}
+					<AddNewSale
 						isOpen={this.state.isPopUpOpen}
 						closePopUp={this.closePopUp}
-					>
-						{/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
-					</PopUpTwoButtons>
+					/>
 
 				</div>
 

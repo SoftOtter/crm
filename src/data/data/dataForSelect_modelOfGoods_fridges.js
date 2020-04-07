@@ -10,7 +10,7 @@ export const dataForSelect_modelOfGoods_fridges = [
     { text: 'A2F637CGWG', value: 9 },
     { text: 'A2F637CGBG', value: 10 },
     { text: 'A2F737CBXG', value: 11 },
-    { text: 'C4F744CCG', value: 12 }
+    { text: 'C4F744CCG', value: 12 },
     { text: 'C4F744CGG', value: 13 },
     { text: 'C4F744CMG', value: 14 },
     { text: 'A2F737CLBG', value: 15 },

@@ -7,11 +7,20 @@ import { DeleteIcon } from '../../icons/DeleteIcon';
 import '../PopUpTwoButtons/popUpTwoButtons-style.css'
 
 export class PopUpTwoButtons extends React.Component {
+    constructor (props) {
+        super(props);
+
+        this.backgroundRef = React.createRef();
+    }
     render() {
         if (!this.props.isOpen) { return null; }
 
         return (
-            <div className={classNames('popUp__background')}>
+            <div 
+                className={classNames('popUp__background')}
+                ref={this.backgroundRef}
+                onClick={this.handleBackgroundClick}
+            >
                 <div className={classNames('popUp')}>
                     <ButtonIcon
                         className={'popUp_closeButton'}
@@ -45,5 +54,11 @@ export class PopUpTwoButtons extends React.Component {
 
     handleClickForClose = () => {
         this.props.closePopUp();
+    }
+
+    handleBackgroundClick = (event) => {
+        if (event.target === this.backgroundRef.current) {
+            this.handleClickForClose();
+        }
     }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
-import BackIcon from './icons/BackIcon';
 import './projectSelect-style.css'
-import { dataForSelectHeader } from '../../UI kit/selectForHeader/dataForSelectHeader';
+import { dataForSelectHeader } from '../../data/dataForSelectHeader';
 import { SelectForHeader } from '../../UI kit/selectForHeader/SelectForHeader';
 
 class ProjectSelect extends React.Component {

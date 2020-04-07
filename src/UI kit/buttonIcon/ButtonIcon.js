@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import './buttonIcon-style.css';
 import TooltipForButton from '../tooltipForButton/TooltipForButton';
 import { DropDownMenu } from '../dropDownMenu/DropDownMenu';
-import { dataForMenu } from '../dropDownMenu/dataForMenu';
+import { dataForMenu } from '../../data/dataForMenu';
 
 class ButtonIcon extends React.Component {
     constructor(props) {
@@ -68,6 +68,9 @@ class ButtonIcon extends React.Component {
             this.setState({
                 onFocus: !this.state.onFocus,
             })
+        }
+        if (typeof this.props.onClick === 'function') {
+            this.props.onClick();
         }
     }
 

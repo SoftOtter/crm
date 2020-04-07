@@ -1,6 +1,5 @@
 import React from 'react';
 import './main-style.css';
-import MoreInfoIcon from './icons/MoreInfoIcon';
 import SalesStatisticsTile from './SalesStatisticsTile/SalesStatisticsTile';
 import WorkingShiftTile from './WorkingShiftTile/WorkingShiftTile';
 import MyTradingPointTile from './MyTradingPointTile/MyTradingPointTile';
@@ -8,6 +7,7 @@ import MyPeopleTile from './MyPeopleTile/MyPeopleTile';
 import TodaySalesTile from './TodaySalesTile/TodaySalesTile';
 import MyMonthlyIncomeTile from './MyMonthlyIncomeTile/MyMonthlyIncomeTile';
 import NewSale from '../popups/NewSale/NewSale';
+import { PopUpTwoButtons } from '../popups/PopUpTwoButtons/PopUpTwoButtons';
 
 class Main extends React.Component {
 	render() {
@@ -39,6 +39,7 @@ class Main extends React.Component {
 					<MyMonthlyIncomeTile />
 				</div>
 				<NewSale />
+
 			</main>
 		);
 	}

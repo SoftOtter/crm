@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import ArrowDownIcon from '../../icons/ArrowDownIcon';
+import { ArrowDownIcon } from '../../icons/ArrowDownIcon';
 import './inputForSelect-style.css';
-import ArrowUpIcon from '../../icons/ArrowUpIcon';
+import { ArrowUpIcon } from '../../icons/ArrowUpIcon';
 import { SelectList } from './SelectList';
 
 export class InputForSelect extends React.Component {

@@ -1,14 +1,16 @@
 import React from 'react';
+import { Svg } from './Svg/Svg';
 
-class MessageIcon extends React.Component {
+export class MessageIcon extends React.Component {
     render() {
+        const {children, ...restProps} = this.props;
         return (
-            <svg 
+            <svg
                 width="16" 
                 height="16" 
                 viewBox="0 0 16 16" 
                 xmlns="http://www.w3.org/2000/svg"
-                className={this.props.className}
+                {...restProps}
             >
                 <path d="M14.4 4V12H2.4V4H14.4ZM14.4 3H2.4C1.8 3 1.4 3.4 1.4 4V12C1.4 12.6 1.8 13 2.4 13H14.4C15 13 15.4 12.6 15.4 12V4C15.4 3.4 15 3 14.4 3Z" />
                 <path d="M8.4 8.6L2.1 4.4L2.7 3.6L8.4 7.4L14.1 3.6L14.7 4.4L8.4 8.6Z" />
@@ -18,5 +20,3 @@ class MessageIcon extends React.Component {
         );
     }
 }
-
-export default MessageIcon;

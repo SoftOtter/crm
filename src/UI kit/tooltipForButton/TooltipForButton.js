@@ -1,6 +1,6 @@
 import React from 'react';
 import './tooltipForButton.css'
-import ArrowForTooltip from '../../icons/ArrowForTooltip';
+import { ArrowForTooltip } from '../../icons/ArrowForTooltip';
 import classNames from 'classnames';
 
 class TooltipForButton extends React.Component {

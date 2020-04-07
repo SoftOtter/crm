@@ -1,5 +1,5 @@
 import React from 'react';
-import ReplyIcon from './icons/ReplyIcon';
+import ReplyIcon from '../../../icons/ReplyIcon';
 import UserInfo from './UserInfo/UserInfo';
 import CurrentDate from '../../../Header/CurrentDate/CurrentDate';
 

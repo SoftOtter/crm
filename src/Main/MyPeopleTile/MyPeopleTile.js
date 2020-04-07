@@ -1,5 +1,5 @@
 import React from 'react';
-import MoreInfoIcon from '../../icons/MoreInfoIcon';
+import { MoreInfoIcon } from '../../icons/MoreInfoIcon';
 import './myPeopleTile-style.css';
 import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
 import { dataForMyPeopleBtnIcon } from '../../data/dataForMyPeopleBtnIcon'

@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import ArrowDownIcon from '../../icons/ArrowDownIcon';
+import { ArrowDownIcon } from '../../icons/ArrowDownIcon';
 import './selectForHeader-style.css';
-import ArrowUpIcon from '../../icons/ArrowUpIcon';
+import { ArrowUpIcon } from '../../icons/ArrowUpIcon';
 import { SelectListHeader } from './SelectListHeader.js';
 
 export class SelectForHeader extends React.Component {

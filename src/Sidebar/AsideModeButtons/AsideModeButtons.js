@@ -1,7 +1,7 @@
 import React from 'react';
-import TaskIcon from '../../icons/TaskIcon';
-import MessageIcon from '../../icons/MessageIcon';
-import NotificationIcon from '../../icons/NotificationIcon';
+import { TaskIcon } from '../../icons/TaskIcon';
+import { MessageIcon } from '../../icons/MessageIcon';
+import { NotificationIcon } from '../../icons/NotificationIcon';
 
 class AsideModeButtons extends React.Component {
     render() {

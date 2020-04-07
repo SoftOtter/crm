@@ -1,5 +1,5 @@
 import React from 'react';
-import BurgerIcon from './icons/BurgerIcon';
+import { BurgerIcon } from '../../icons/BurgerIcon';
 
 class NavButton extends React.Component {
     render() {

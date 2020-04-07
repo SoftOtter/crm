@@ -5,7 +5,7 @@ import CurrentDate from './CurrentDate/CurrentDate';
 import './header-style.css';
 import Rates from './Rates/Rates';
 import HelpIcon from '../icons/HelpIcon';
-import MobileAsideButtons from './MobileAsideButtons/MobileAsideButtons';
+import { MobileAsideButtons } from './MobileAsideButtons/MobileAsideButtons';
 import { UserInfo } from './UserInfo/UserInfo';
 import { ButtonWithIcon } from '../UI kit/buttonWithIcon/ButtonWithIcon';
 import { DollarIcon } from '../icons/DollarIcon';
@@ -21,11 +21,11 @@ class Navigation extends React.Component {
                     <CurrentDate />
                     <div className={'rates-wrapper'}>
                         <Rates 
-                            currencyIcon = {<DollarIcon class={'currencyIcon'}/>}
+                            currencyIcon = {<DollarIcon className={'currencyIcon'}/>}
                             rate = {'USD'}
                         />
                         <Rates 
-                            currencyIcon = {<EuroIcon class={'currencyIcon'}/>}
+                            currencyIcon = {<EuroIcon className={'currencyIcon'}/>}
                             rate = {'EUR'}
                         />
                     </div>

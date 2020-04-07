@@ -1,11 +1,11 @@
 import React from 'react';
 import ListItem from './ListItem/ListIem';
-import ControlPanelIcon from './icons/ControlPanelIcon';
-import StatisticsIcon from './icons/StatisticsIcon';
-import SalesIcon from './icons/SalesIcon';
-import ReviseIcon from './icons/ReviseIcon';
-import WorkingDaysIcon from './icons/WorkingDaysIcon';
-import DocumentsIcon from './icons/DocumentsIcon';
+import { ControlPanelIcon } from '../icons/icons_20px/ControlPanelIcon';
+import { StatisticsIcon } from '../icons/icons_20px/StatisticsIcon';
+import { SalesIcon } from '../icons/icons_20px/SalesIcon';
+import { ReviseIcon } from '../icons/icons_20px/ReviseIcon';
+import { WorkingDaysIcon } from '../icons/icons_20px/WorkingDaysIcon';
+import { DocumentsIcon } from '../icons/icons_20px/DocumentsIcon';
 import './navigation-style.css';
 
 const logoImg = require('./logo.png');

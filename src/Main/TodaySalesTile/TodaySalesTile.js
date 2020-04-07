@@ -1,18 +1,39 @@
 import React from 'react';
 import './todaySalesTile-style.css';
-import Button from '../../UI kit/button/Button';
-import PlusInCircleIcon from '../../icons/PlusInCircleIcon';
+import { MajorButton } from '../../UI kit/majorButton/MajorButon';
+import { AddIcon } from '../../icons/AddIcon';
+import { PopUpTwoButtons } from '../../popups/PopUpTwoButtons/PopUpTwoButtons';
 
 class TodaySalesTile extends React.Component {
+	constructor (props) {
+		super (props);
+
+		this.state = {
+			isPopUpOpen: false
+		}
+	}
     render() {
         return (
             <div className='tiles todays-sales'>
 				<div className='tables-header'>
 					<h2 className='tables-title'>Продажи сегодня</h2>
-					<Button type={'filled'} className='btn-add-sales'>
-						<PlusInCircleIcon />
-						<span>Добавить продажу</span>
-					</Button>
+					<MajorButton
+						buttonText = {'Добавить продажу'}
+						className={'TodaySalesTile__ButtonAddSale'}
+						icon={<AddIcon className={'TodaySalesTile__ButtonAddSaleIcon'}/>}
+						onClick={this.handleClickAddSale}
+                	/>
+
+					<PopUpTwoButtons
+						header={'Заголовок'}
+						cancelButtonTitle={'Отмена'}
+						submitButtonTitle={'Добавить'}
+						isOpen={this.state.isPopUpOpen}
+						closePopUp={this.closePopUp}
+					>
+						{/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
+					</PopUpTwoButtons>
+
 				</div>
 
 		    	<table>
@@ -50,7 +71,20 @@ class TodaySalesTile extends React.Component {
 		    	</table>
 		    </div>
         );
-    }
+	}
+	
+	handleClickAddSale = () => {
+		this.setState({
+			isPopUpOpen: true
+		})
+	}
+
+	closePopUp = () => {
+		this.setState({
+			isPopUpOpen: false
+		})
+	}
+
 }
 
 export default TodaySalesTile;

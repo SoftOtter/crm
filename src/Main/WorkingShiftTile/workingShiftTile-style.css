@@ -47,18 +47,6 @@ main .working-shift .time {
     font-weight: 600;
 }
 
-main .working-shift .btn-working-shift {
-    width: 100%;
-    background-color: #536dfe;
-    height: 36px;
-    border-radius: 4px;
-
-    color: #fff;
-    font-size: 14px;
-    line-height: 20px;
-    font-family: 'IBM Plex Sans';
-}
-
 .WorkingShiftTile__Button {
     width: 100%;
 }

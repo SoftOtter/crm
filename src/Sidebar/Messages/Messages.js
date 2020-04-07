@@ -1,6 +1,6 @@
 import React from 'react';
 import Message from './Message/Message';
-import { messages as messagesFromServer } from "./data";
+import { messages as messagesFromServer } from "../../data/dataForMessages";
 
 class Messages extends React.Component {
     render() {

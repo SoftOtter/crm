@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import MessageIcon from '../../icons/MessageIcon';
+import { MessageIcon } from '../../icons/MessageIcon';
 import TooltipForButton from '../tooltipForButton/TooltipForButton';
 
 export class TabButton extends React.Component {

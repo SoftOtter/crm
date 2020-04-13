@@ -1,7 +1,7 @@
 import React from 'react';
 import { Svg } from './Svg/Svg';
 
-class ArrowLeftIcon extends React.Component {
+export class ArrowLeftIcon extends React.Component {
     render() {
         const {children, ...restProps} = this.props;
         return (
@@ -23,5 +23,3 @@ class ArrowLeftIcon extends React.Component {
         );
     }
 }
-
-export default ArrowLeftIcon;

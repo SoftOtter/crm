@@ -1,7 +1,7 @@
 import React from 'react';
 import './salesStatisticsTile-style.css';
 import { SalesStatisticButton } from '../../icons/SalesStatisticButton';
-import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
+import { ButtonIcon } from '../../UI kit/buttonIcon/ButtonIcon';
 import { ButtonWithIcon } from '../../UI kit/buttonWithIcon/ButtonWithIcon';
 import { CalendarIcon } from '../../icons/CalendarIcon';
 

@@ -1,0 +1,23 @@
+.MonthPicker {
+    display: flex;
+    justify-content: space-between;
+    color: #383e5c;
+    
+    font-family: 'IBM Plex Sans';
+}
+
+.MonthPicker__switchMonthButton {
+    padding: 12px;
+    box-sizing: content-box;
+}
+
+.MonthPicker__selectedMonthText {
+    font-size: 16px;
+}
+
+.MonthPicker__selectedMonth {
+}
+
+.MonthPicker__selectedMonthText {
+    line-height: 48px;
+}

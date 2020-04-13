@@ -2,7 +2,7 @@ import React from 'react';
 import { MoreInfoIcon } from '../../icons/MoreInfoIcon';
 import Button from '../../UI kit/button/Button';
 import './workingShiftTile-style.css';
-import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
+import { ButtonIconWithMenu } from '../../UI kit/buttonIconWithMenu/ButtonIconWithMenu';
 import { dataForMenu } from '../../data/dataForMenu';
 import { MajorButton } from '../../UI kit/majorButton/MajorButon';
 
@@ -23,7 +23,7 @@ class WorkingShiftTile extends React.Component {
 			<div className='tiles working-shift'>
 				<div className='tiles-header'>
 					<h2 className='tiles-title'>Смена с 10:00 до 17:00</h2>
-					<ButtonIcon 
+					<ButtonIconWithMenu
 						className = {'WorkingShiftTile-button'}
 						icon = {<MoreInfoIcon className={'iconForButton WorkingShiftTileIcon'}/>}
 						textForTooltip = {'More information'}

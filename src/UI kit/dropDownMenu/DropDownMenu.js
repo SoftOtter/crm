@@ -15,20 +15,16 @@ export class DropDownMenu extends React.Component {
 
     render() {
         const items = this.props.dropDownItems.map(
-            x => 
+            x =>
                 <div
                     key={x.value}
                     className={classNames('dropDownItem-wrapper', this.props.onHoverUserMenu)}
                     onClick={() => this.props.closeMenu(x.value)}
                 >
                     {x.icon &&
-                        <x.icon 
-                            className={'dropDownIcon'}
-                        />
+                        <x.icon className={'dropDownIcon'} />
                     }
-                    <span
-                        className={'dropDownItem inputForSelect-textWrap'}
-                    >
+                    <span className={'dropDownItem inputForSelect-textWrap'}>
                         {x.text}
                     </span>
                 </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { MoreInfoIcon } from '../../icons/MoreInfoIcon';
 import './myPeopleTile-style.css';
-import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
-import { dataForMyPeopleBtnIcon } from '../../data/dataForMyPeopleBtnIcon'
+import { dataForMyPeopleBtnIcon } from '../../data/dataForMyPeopleBtnIcon';
+import { ButtonIconWithMenu } from '../../UI kit/buttonIconWithMenu/ButtonIconWithMenu';
 
 class MyPeopleTile extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class MyPeopleTile extends React.Component {
             <div className='tiles my-people'>
 				<div className='tiles-header'>
 					<h2 className='tiles-title'>{this.props.title}</h2>
-					<ButtonIcon 
+					<ButtonIconWithMenu
 						className = {'myPeopleTile-button'}
                 		icon = {<MoreInfoIcon className={'iconForButton myPeopleTileIcon'}/>}
 						textForTooltip = {'More information'}

@@ -1,0 +1,14 @@
+.TableHeader__row {
+    height: 44px;
+}
+
+.TableHeader {
+    background-color: #f2f4ff;
+    text-transform: uppercase;
+}
+
+.TableHeader__cell{
+    /*border: 1px solid #000;*/
+    padding: 0px 15px;
+    vertical-align: middle;
+}

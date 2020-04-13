@@ -36,6 +36,7 @@ export class UserInfo extends React.Component {
                         dropDownItems={dataForUserMenu}
                         closeMenuOutside={this.handleClickOutside}
                         onHoverUserMenu={'onHoverUserMenu'}
+                        closeMenu={this.handleClickSelect}
                     />
                 }
             </div>
@@ -54,5 +55,11 @@ export class UserInfo extends React.Component {
                 onFocus: false,
             })
         }
+    }
+
+    handleClickSelect = (value) => {
+        this.setState({
+            onFocus: false,
+        })
     }
 }

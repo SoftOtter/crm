@@ -1,0 +1,38 @@
+.ButtonIconWithMenu__wrapper {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.ButtonIconWithMenu__icon {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ButtonIconWithMenu__icon .iconForButton {
+    fill: #536dfe;
+}
+
+.ButtonIconWithMenu__icon:hover .iconForButton{
+    fill: #4b62e3;
+}
+
+.ButtonIconWithMenu__icon:active .iconForButton{
+    fill: #4257c9;
+}
+
+.ButtonIconWithMenu__svgBtnIconWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

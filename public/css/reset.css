@@ -51,6 +51,10 @@ button {
   background-color: transparent;
   padding: 0px;
   color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  
 }
 
 input:focus,

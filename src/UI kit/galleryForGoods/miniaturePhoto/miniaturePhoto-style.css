@@ -63,8 +63,6 @@
     opacity: 0;
 }
 
-
-
 .MiniaturePhoto__arrow:hover .MiniaturePhoto__arrowIcon {
     fill: #c5c7d0;
 }

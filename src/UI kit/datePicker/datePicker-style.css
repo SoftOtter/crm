@@ -1,11 +1,23 @@
 .DatePicker__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 16px;
     font-family: 'IBM Plex Sans';
     
 }
 
 .DatePicker__wrapper {
+    margin: 32px;
+    width: 300px;
+    height: 484px;
     background-color: #fff;
     border-radius: 4px;
     overflow: hidden;
@@ -16,6 +28,7 @@
 
 .DatePicker__content {
     padding: 8px 24px 0px;
+    user-select: none;
 }
 
 .DatePicker__prevMonthMarginLeft {
@@ -47,4 +60,9 @@
 .DatePicker__confirmButton {
     margin-left: 8px;
     min-width: 24px;
+}
+
+.DatePicker__button:hover {
+    background-color: #f2f4ff;
+    border-radius: 4px;
 }

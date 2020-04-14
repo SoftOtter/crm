@@ -13,6 +13,7 @@ import TextArea from '../../UI kit/fields/TextArea';
 import { GalleryForGoods } from '../../UI kit/galleryForGoods/GalleryForGoods';
 import { dataForGoodsPhotoes_two } from '../../data/dataForGoodsPhotoes_two';
 import './addNewSale-style.css'
+import { DatePickerInput } from '../../UI kit/datePickerInput/DatePickerInput';
 
 export class AddNewSale extends React.Component {
     render() {
@@ -56,11 +57,7 @@ export class AddNewSale extends React.Component {
 
                 <div className={'AddNewSale__salesInfo'}>
                     {/* DATA PICKER WILL ADDING LATER*/}
-                    <Input
-                        className={'AddNewSale__salesInfoDataPicker'}
-                        label = {'Дата'}
-                        placeholder = {'Enter smth'}
-                    />
+                    <DatePickerInput />
 
                     <FieldForAmount
                         className={'AddNewSale__salesInfoAmountInput'}

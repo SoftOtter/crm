@@ -21,7 +21,7 @@
     width: 36px;
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .DatePickerCalendar__weekDayText {
@@ -34,15 +34,8 @@
     width: 36px;
 }
 
-.DatePickerCalendar__dayNumber {
-    
-    font-size: 16px;
-    line-height: 36px;
-    font-family: 'IBM Plex Sans';
-}
-
-.DatePickerCalendar__dayNumber-grey {
-    color: #bfc1ca;
+.DatePickerCalendar__dayNumberText-grey {
+    color: #ced1d8;
 }
 
 .DatePickerCalendar__dayButton {
@@ -51,6 +44,9 @@
     width: 36px;
     border-radius: 4px;
     color: #383e5c;
+    font-size: 16px;
+    line-height: 36px;
+    font-family: 'IBM Plex Sans';
 }
 
 .DatePickerCalendar__dayButton:hover:not(.DatePickerCalendar__dayButton-focused) {
@@ -64,4 +60,8 @@
 .DatePickerCalendar__dayButton-focused {
     background-color: #536dfe;
     color: #fff;
+}
+
+.DatePickerCalendar__dayButton-focused .DatePickerCalendar__dayNumberText-grey {
+    color: #e2e3e7;
 }

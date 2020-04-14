@@ -2,13 +2,26 @@
     display: flex;
     justify-content: space-between;
     color: #383e5c;
-    
     font-family: 'IBM Plex Sans';
 }
 
 .MonthPicker__switchMonthButton {
-    padding: 12px;
-    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+}
+
+.MonthPicker__switchMonthBtnWrapper {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.MonthPicker__switchMonthButton:hover {
+    background-color: #f2f4ff
+}
+
+.MonthPicker__switchMonthButton:active {
+    background-color: #e4e8ff;
 }
 
 .MonthPicker__selectedMonthText {

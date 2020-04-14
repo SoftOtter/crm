@@ -15,6 +15,10 @@ export class ButtonIcon extends React.Component {
         this.wrapperDiv = React.createRef();
     }
 
+    static defaultProps = {
+        classes: {}
+    };
+
     render() {
         return (
             <div 
@@ -22,10 +26,10 @@ export class ButtonIcon extends React.Component {
                 ref={this.wrapperDiv}
             >
                 <button 
-                    className = {classNames('button-icon')}
+                    className = {classNames('button-icon', this.props.classes.btnSize)}
                     onMouseEnter = {this.handleEnter}
                     onMouseLeave = {this.handleLeave}
-                    onClick = {this.handleClickButton}
+                    onClick = {this.props.onClick}
                 >
                     {this.props.icon}
                     <div className={'svgBtnIcon-wrapper'}></div>
@@ -51,16 +55,5 @@ export class ButtonIcon extends React.Component {
         this.setState({
             onHover: false,
         });
-    }
-
-    handleClickButton = () => {
-        if (this.props.dataForDropDownMenu) {
-            this.setState({
-                onFocus: !this.state.onFocus,
-            })
-        }
-        if (typeof this.props.onClick === 'function') {
-            this.props.onClick();
-        }
     }
 }

@@ -3,32 +3,26 @@ import classNames from 'classnames';
 import './datePickerCalendar-style.css'
 
 export class DatePickerCalendar extends React.Component {
-    constructor (props) {
-        super(props);
-        const currentDay = new Date();
-
-        this.state={
-            onFocus: false,
-            selectedDate: currentDay.getDate(),
-            selectedMonth: currentDay.getMonth(),
-            selectedYear: currentDay.getFullYear(),
-        }
-    }
     render() {
         const weeks = this.getMonth().map((week, index) => {
             const days = week.map(day => {
-                const focused = day.date === this.state.selectedDate && day.month === this.state.selectedMonth;
+                const focused = day.date === this.props.selectedDate && day.month === this.props.selectedMonth;
                 return <div
-                    key={'' + day.date + day.month}
+                    key={'' + day.date + '_' + day.month}
                     className={'DatePickerCalendar__day'}
                 >
                     <button 
-                        className={classNames('DatePickerCalendar__dayButton', focused && 'DatePickerCalendar__dayButton-focused')}
+                        className={
+                            classNames(
+                                'DatePickerCalendar__dayButton',
+                                focused && 'DatePickerCalendar__dayButton-focused'
+                            )
+                        }
                         onClick={() => this.handleClickDay(day.date, day.month)}
                     >
                         <span className={classNames(
-                            'DatePickerCalendar__dayNumber', 
-                            (day.month !== this.state.selectedMonth) && 'DatePickerCalendar__dayNumber-grey'
+                            'DatePickerCalendar__dayNumberText', 
+                            (day.month !== this.props.shownMonth) && 'DatePickerCalendar__dayNumberText-grey'
                         )}>
                             {day.date}
                         </span>
@@ -63,8 +57,21 @@ export class DatePickerCalendar extends React.Component {
     }
 
     getMonth = () => {
-        const today = new Date();
+        const today = new Date(
+            this.props.shownYear,
+            this.props.shownMonth
+        );
         let processingMonth = today.getMonth();
+        let prevMonth = processingMonth - 1;
+        let nextMonth = processingMonth + 1;
+
+        if (prevMonth < 0) {
+            prevMonth = 11;
+        }
+        
+        if (nextMonth > 11) {
+            nextMonth = 0;
+        }
 
         today.setDate(1);
         const startDayOfWeek = this.weekDaysConverter(today.getDay());
@@ -87,7 +94,7 @@ export class DatePickerCalendar extends React.Component {
         for (let i = startDayOfWeek - 1; i >= 0; i--) {
             monthArray[0][i] = {
                 date: lastDateOfPrevMonth--,
-                month: processingMonth - 1,
+                month: prevMonth,
             };
         }
 
@@ -108,21 +115,12 @@ export class DatePickerCalendar extends React.Component {
                 };
                 if (counter > lastDayOfMonth) {
                     counter = 1;
-                    processingMonth = processingMonth + 1;
+                    processingMonth = nextMonth;
                 }
             }
         }
 
         return monthArray;
-
-        const monthArray2 = [
-            [null, null, 1, 2, 3, 4, 5],
-            [6, 7, 8, 9, 10, 11, 12],
-            [13, 14, 15, 16, 17, 18, 19],
-            [20, 21, 22, 23, 24, 25, 26],
-            [27, 28, 29, 30, null, null, null],
-            [null, null, null, null, null, null, null]
-        ]
     }
 
     weekDaysConverter = (weekDay) => {
@@ -131,10 +129,6 @@ export class DatePickerCalendar extends React.Component {
     }
 
     handleClickDay = (clickedDate, clickedMonth) => {
-
-        this.setState ({
-            selectedDate: clickedDate,
-            selectedMonth: clickedMonth
-        })
+        this.props.pickDate(clickedDate, clickedMonth);
     }
 }

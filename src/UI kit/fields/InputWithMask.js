@@ -1,9 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import './input-style.css';
 import { ErrorIcon } from '../../icons/ErrorIcon';
+import InputMask from 'react-input-mask';
+import './input-style.css';
 
-class Input extends React.Component {
+export class InputWithMask extends React.Component {
     constructor(props) {
         super(props);
 
@@ -31,8 +32,6 @@ class Input extends React.Component {
                         {clonedIcon}
                     </div>
                 </button>
-        } else if (this.props.error) {
-            icon = <ErrorIcon className={'input-error-icon'}/>;
         }
 
         return (
@@ -50,11 +49,14 @@ class Input extends React.Component {
                     this.state.focused && 'inputForSelect-focused',
                 )}
                 >
-                    <input
+                    <InputMask
                         id={this.props.id}
+                        mask={this.props.mask}
                         placeholder={this.props.placeholder}
                         onBlur={this.handleBlur}
                         onFocus={this.handleClickFocus}
+                        value={this.props.value}
+                        onChange={this.props.onChange}
                     />
                     {icon}
                 </div>
@@ -75,5 +77,3 @@ class Input extends React.Component {
         });
     };
 }
-
-export default Input;

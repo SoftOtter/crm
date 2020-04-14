@@ -13,6 +13,7 @@ import { Table } from '../Tables/Table';
 import { DatePickerCalendar } from '../UI kit/datePicker/datePickerCalendar/DatePickerCalendar';
 import { MonthPicker } from '../UI kit/datePicker/MonthPicker/MonthPicker';
 import { DatePicker } from '../UI kit/datePicker/DatePicker';
+import { DatePickerInput } from '../UI kit/datePickerInput/DatePickerInput';
 
 class Main extends React.Component {
 	render() {
@@ -44,10 +45,6 @@ class Main extends React.Component {
 					<MyMonthlyIncomeTile />
 				</div>
 				<NewSale />
-				
-
-				<DatePicker />
-				
 
 			</main>
 		);

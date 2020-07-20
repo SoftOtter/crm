@@ -61,10 +61,11 @@
     z-index: 10;
     padding: 6px 0px;
     opacity: 0;
+    cursor: pointer;
 }
 
 .MiniaturePhoto__arrow:hover .MiniaturePhoto__arrowIcon {
-    fill: #c5c7d0;
+    fill: #536dfe;
 }
 
 .MiniaturePhoto__arrowUp {

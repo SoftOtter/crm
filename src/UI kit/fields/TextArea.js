@@ -15,7 +15,7 @@ class TextArea extends React.Component {
                         className={classNames('textArea', this.props.classes.textArea)}
                         id={this.props.id}
                         placeholder={this.props.placeholder}
-                        cols={40}
+                        cols={10}
                         rows={3}
                     />
                 </label>

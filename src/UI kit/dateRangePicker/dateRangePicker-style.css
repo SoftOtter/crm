@@ -1,0 +1,65 @@
+
+
+.DateRangePicker__wrapper {
+    margin: 32px;
+    width: 576px;
+    height: 462px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),
+        0px 24px 38px 3px rgba(0,0,0,0.14),
+        0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+
+.DateRangePicker__content {
+    padding: 8px 24px 0px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DateRangePicker__calendars {
+    display: flex;
+}
+
+.DateRangePicker__Month {
+    display: flex;
+    flex-direction: column;
+}
+
+.DateRangePicker__leftMonth {
+
+}
+
+.DateRangePicker__calendar {
+
+}
+
+.DateRangePicker__calendar {
+    margin-top: 8px;
+}
+
+.DateRangePicker__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+    padding-right: 24px;
+}
+
+.DateRangePicker__button {
+    height: 24px;
+    padding: 4px 16px;
+    box-sizing: content-box;
+    text-transform: uppercase;
+}
+
+.DateRangePicker__confirmButton {
+    margin-left: 8px;
+    min-width: 24px;
+}
+
+.DateRangePicker__button:hover {
+    background-color: #f2f4ff;
+    border-radius: 4px;
+}

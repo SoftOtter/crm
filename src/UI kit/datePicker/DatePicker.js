@@ -2,16 +2,22 @@ import React from 'react';
 import { ButtonWithIcon } from '../buttonWithIcon/ButtonWithIcon';
 import { DatePickerCalendar } from './datePickerCalendar/DatePickerCalendar';
 import { MonthPicker } from './MonthPicker/MonthPicker';
-import './datePicker-style.css'
 import { DatePickerHeader } from './datePickerHeader/DatePickerHeader';
 import { YearList } from './yearList/YearList';
+import './datePicker-style.css'
 
 export class DatePicker extends React.Component {
     constructor (props) {
         super(props);
-        const currentDay = new Date();
+        let currentDay = new Date();
+        if (props.date) {
+            currentDay = new Date(props.date.year, props.date.month, props.date.date);
+        }
 
         this.state={
+            todayDate: currentDay.getDate(),
+            todayMonth: currentDay.getMonth(),
+            todayYear: currentDay.getFullYear(),
             selectedDate: currentDay.getDate(),
             selectedMonth: currentDay.getMonth(),
             selectedYear: currentDay.getFullYear(),
@@ -53,6 +59,9 @@ export class DatePicker extends React.Component {
                                     />
                                     <DatePickerCalendar 
                                         className={'DatePicker__calendar'}
+                                        todayDate={this.state.todayDate}
+                                        todayMonth={this.state.todayMonth}
+                                        todayYear={this.state.todayYear}
                                         selectedDate={this.state.selectedDate}
                                         selectedMonth={this.state.selectedMonth}
                                         shownMonth={this.state.shownMonth}
@@ -86,7 +95,6 @@ export class DatePicker extends React.Component {
                     </div>
                 </div>
             </div>
-            
         );
     }
 
@@ -112,7 +120,7 @@ export class DatePicker extends React.Component {
         })
     }
 
-    // Set boundary years (1900-2099)
+    // TODO: Set boundary years (1900-2099)
     pickedMonth = (month, action) => {
         let shownYear = this.state.shownYear;
         if (action === 'prev') {

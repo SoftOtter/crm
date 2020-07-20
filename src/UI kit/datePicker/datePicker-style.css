@@ -17,7 +17,7 @@
 .DatePicker__wrapper {
     margin: 32px;
     width: 300px;
-    height: 484px;
+    height: 480px;
     background-color: #fff;
     border-radius: 4px;
     overflow: hidden;
@@ -52,7 +52,7 @@
 
 .DatePicker__button {
     height: 24px;
-    padding: 6px 8px;
+    padding: 4px 16px;
     box-sizing: content-box;
     text-transform: uppercase;
 }

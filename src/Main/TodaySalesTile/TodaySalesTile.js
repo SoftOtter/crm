@@ -6,6 +6,7 @@ import { AddNewSale } from '../../popups/AddNewSale/AddNewSale';
 import { Table } from '../../Tables/Table';
 import { dataForSalesTileTableHeader } from '../../data/dataForSalesTileTableHeader';
 import { dataSales } from '../../data/dataSales';
+import { ConfirmAction } from '../../popups/ConfirmAction/ConfirmAction';
 
 class TodaySalesTile extends React.Component {
 	constructor (props) {

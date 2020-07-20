@@ -7,6 +7,12 @@ export class DatePickerCalendar extends React.Component {
         const weeks = this.getMonth().map((week, index) => {
             const days = week.map(day => {
                 const focused = day.date === this.props.selectedDate && day.month === this.props.selectedMonth;
+                //here used shownYear because we should compare with year which we see now. 
+                //If now display other year, we shouldn't emphasaize this date and month.
+                const today = 
+                    day.date === this.props.todayDate &&
+                    day.month === this.props.todayMonth &&
+                    this.props.shownYear === this.props.todayYear; 
                 return <div
                     key={'' + day.date + '_' + day.month}
                     className={'DatePickerCalendar__day'}
@@ -15,7 +21,8 @@ export class DatePickerCalendar extends React.Component {
                         className={
                             classNames(
                                 'DatePickerCalendar__dayButton',
-                                focused && 'DatePickerCalendar__dayButton-focused'
+                                focused && 'DatePickerCalendar__dayButton-focused',
+                                (!focused && today) && 'DatePickerCalendar__dayButton-today'
                             )
                         }
                         onClick={() => this.handleClickDay(day.date, day.month)}

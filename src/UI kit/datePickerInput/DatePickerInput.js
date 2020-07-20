@@ -1,8 +1,9 @@
 import React from 'react';
-import './datePickerInput-style.css'
+import classNames from 'classnames';
 import { InputWithMask } from '../fields/InputWithMask';
 import { CalendarIcon } from '../../icons/CalendarIcon';
 import { DatePicker } from '../datePicker/DatePicker';
+import './datePickerInput-style.css'
 
 
 export class DatePickerInput extends React.Component {
@@ -19,7 +20,7 @@ export class DatePickerInput extends React.Component {
         return (
             <>
                 <InputWithMask
-                    className={'DatePickerInput'}
+                    className={classNames('DatePickerInput', this.props.className)}
                     icon={<CalendarIcon className={'DatePickerInput__calendarIcon'}/>}
                     label={'Дата'}
                     placeholder={'MM/DD/YYYY'}
@@ -31,10 +32,11 @@ export class DatePickerInput extends React.Component {
                 />
 
                 {this.state.datePickerOpen &&
-                        <DatePicker 
-                            clickCancel={this.handleClickCancel}
-                            clickConfirm={this.handleClickConfirm}
-                        />
+                    <DatePicker 
+                        clickCancel={this.handleClickCancel}
+                        clickConfirm={this.handleClickConfirm}
+                        date={this.pickedDate()}
+                    />
                 }
             </>
         );
@@ -69,6 +71,44 @@ export class DatePickerInput extends React.Component {
             number = '0' + number;
         }
         return number;
+    }
+
+    pickedDate = () => {
+        let currentValue = this.state.inputValue;
+
+        let error = false;
+        let [newMonth, newDate, newYear] = currentValue.split('/');
+
+        newDate = Number(newDate);
+        newMonth = Number(newMonth);
+        newYear = Number(newYear);
+        if (isNaN(newDate) || isNaN(newMonth) || isNaN(newYear)) {
+            error = true;
+        } else {
+            if (newYear < 1900 || newYear > 2100) {
+                error = true;
+            } else if (newMonth < 1 || newMonth > 12) {
+                error = true;
+            } else {
+                let date = new Date(newYear, newMonth);
+                date.setMonth(date.getMonth() + 1);
+                date.setDate(0);
+                const lastDateOfNewMonth = date.getDate();
+                if (newDate < 1 || newDate > lastDateOfNewMonth) {
+                    error = true;
+                }
+            }
+        }
+
+        if (!error) {
+            return {
+                year: newYear,
+                month: newMonth - 1,
+                date: newDate,
+            }
+        }
+
+        
     }
 
     handleInputChange = (event) => {

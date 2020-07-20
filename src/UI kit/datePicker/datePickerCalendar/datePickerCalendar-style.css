@@ -65,3 +65,7 @@
 .DatePickerCalendar__dayButton-focused .DatePickerCalendar__dayNumberText-grey {
     color: #e2e3e7;
 }
+
+.DatePickerCalendar__dayButton-today {
+    box-shadow: inset 0px 0px 0px 1px #536dfe;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import { ErrorIcon } from '../../icons/ErrorIcon';
 import InputMask from 'react-input-mask';
 import './input-style.css';
 

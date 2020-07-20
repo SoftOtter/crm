@@ -1,0 +1,50 @@
+.MonthPickerForRange {
+    background-color: #fff;
+    color: #383e5c;
+    font-family: 'IBM Plex Sans';
+    display: flex;
+    justify-content: space-between;
+}
+
+.MonthPickerForRange__switchMonthButton {
+    width: 100%;
+    height: 100%;
+}
+
+.MonthPickerForRange__switchMonthBtnWrapper {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.MonthPickerForRange__switchMonthButton:hover {
+    background-color: #f2f4ff
+}
+
+.MonthPickerForRange__switchMonthButton:active {
+    background-color: #e4e8ff;
+}
+
+.MonthPickerForRange__buttonWrapper {
+    width: 48px;
+    height: 48px;
+}
+
+.MonthPickerForRange__buttonWrapperPrev {
+    margin-left: -8px;
+}
+
+.MonthPickerForRange__buttonWrapperNext {
+    margin-right: -8px;
+}
+
+.MonthPickerForRange__selectedMonthText {
+    font-size: 16px;
+}
+
+.MonthPickerForRange__selectedMonth {
+}
+
+.MonthPickerForRange__selectedMonthText {
+    line-height: 48px;
+}

@@ -30,9 +30,12 @@ class Input extends React.Component {
                     <div className={'Input__iconButtonWrapper'}>
                         {clonedIcon}
                     </div>
-                </button>
+                </button>;
         } else if (this.props.error) {
-            icon = <ErrorIcon className={'input-error-icon'}/>;
+            icon = 
+            <div className={'Input__errorIconWrapper'}>
+                <ErrorIcon className={'input-error-icon'}/>
+            </div>;
         }
 
         return (
@@ -45,8 +48,7 @@ class Input extends React.Component {
                 <div className={classNames(
                     'input',
                     this.props.error && 'error',
-                    (this.props.icon || this.props.error) && 'icon-padding', 
-                    this.props.compact && 'compact',
+                    (this.props.icon || this.props.error) && 'icon-padding',
                     this.state.focused && 'inputForSelect-focused',
                 )}
                 >

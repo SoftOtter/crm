@@ -1,0 +1,56 @@
+.TableBody__row {
+    height: 44px;
+}
+
+.TableBody__row:hover {
+    background-color: #f9faff;
+}
+
+.TableBody__cell{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+    padding: 0px 16px;
+    height: 44px;
+    vertical-align: middle;
+}
+
+.TableBody__cell:nth-child(1){
+    text-align: center;
+}
+
+.TableBody__cell:nth-child(2){
+    text-align: start;
+}
+
+.TableBody__cell:nth-child(3){
+    text-align: end;
+}
+
+.TableBody__cell:nth-child(4){
+    text-align: end;
+}
+
+.TableBody__cell:nth-child(5){
+    text-align: start;
+}
+
+.TableBody__statusIndicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    display: inline-block;
+}
+
+.TableBody__statusText-red {
+    color: #ef4e76;
+}
+
+.TableBody__statusText-yellow {
+    color: #e0ac28;
+}
+
+.TableBody__statusText-green {
+    color: #9abd73;
+}

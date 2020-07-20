@@ -30,29 +30,33 @@ export class SelectForHeader extends React.Component {
         return (
             <div className={this.props.className}>
                 {this.props.label &&
-                    <p className={'selectForHeader-label'}>{this.props.label}</p>
+                    <p className={'SelectForHeader__label'}>{this.props.label}</p>
                 }
                 <div
-                    className={'selectForHeader-wrapper'} 
+                    className={'SelectForHeader__wrapper'} 
                     onClick={this.handleClickWrapper} 
                     ref={this.wrapperDiv}
                 >
+                    <select 
+                        className={'SelectForHeader__nativeSelect'}
+                        value={this.state.selectedItem}
+                    />
                     <div
                         className={classNames(
-                            'selectForHeader',
-                            this.state.focused && 'selectForHeader-focused'
+                            'SelectForHeader',
+                            this.state.focused && 'SelectForHeader__focused'
                         )}
                     >
                     
-                        <div className={'selectForHeader-textWrap'}>
+                        <div className={'SelectForHeader__textWrap'}>
                             {selectedItem.text}
                         </div>
 
                         {this.state.focused 
-                            ? <ArrowUpIcon className={'arrow-icon arrowUp-icon'} /> 
-                            : <ArrowDownIcon className={'arrow-icon arrowDown-icon'} />
+                            ? <ArrowUpIcon className={'SelectForHeader__arrowIcon SelectForHeader__arrowUpIcon'} /> 
+                            : <ArrowDownIcon className={'SelectForHeader__arrowIcon SelectForHeader__arrowDownIcon'} />
                         }
-                        <div className={'selectForHeader-cover'} />
+                        <div className={'SelectForHeader__cover'} />
                     </div>
 
                     {this.state.focused &&

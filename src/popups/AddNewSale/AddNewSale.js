@@ -13,10 +13,12 @@ import TextArea from '../../UI kit/fields/TextArea';
 import { GalleryForGoods } from '../../UI kit/galleryForGoods/GalleryForGoods';
 import { dataForGoodsPhotoes_two } from '../../data/dataForGoodsPhotoes_two';
 import './addNewSale-style.css'
+import { DatePickerInput } from '../../UI kit/datePickerInput/DatePickerInput';
+import { ConfirmAction } from '../ConfirmAction/ConfirmAction';
 
 export class AddNewSale extends React.Component {
     render() {
-        return (
+        return (<>
             <PopUpTwoButtons
 				header={'Новая продажа'}
 				cancelButtonTitle={'Отмена'}
@@ -55,12 +57,7 @@ export class AddNewSale extends React.Component {
                 <div className={'AddNewSale__devider'}></div>
 
                 <div className={'AddNewSale__salesInfo'}>
-                    {/* DATA PICKER WILL ADDING LATER*/}
-                    <Input
-                        className={'AddNewSale__salesInfoDataPicker'}
-                        label = {'Дата'}
-                        placeholder = {'Enter smth'}
-                    />
+                    <DatePickerInput className={'AddNewSale__salesInfoDatePicker'}/>
 
                     <FieldForAmount
                         className={'AddNewSale__salesInfoAmountInput'}
@@ -101,7 +98,11 @@ export class AddNewSale extends React.Component {
                         }}
                     />
                 </div>
-			</PopUpTwoButtons>
+            </PopUpTwoButtons>
+            {false && <ConfirmAction
+                confirmText={'Продажа успешно добавлена!'}
+            />}
+            </>
         );
     }
 }

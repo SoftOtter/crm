@@ -2,8 +2,11 @@ import React from 'react';
 import './todaySalesTile-style.css';
 import { MajorButton } from '../../UI kit/majorButton/MajorButon';
 import { AddIcon } from '../../icons/AddIcon';
-import { PopUpTwoButtons } from '../../popups/PopUpTwoButtons/PopUpTwoButtons';
 import { AddNewSale } from '../../popups/AddNewSale/AddNewSale';
+import { Table } from '../../Tables/Table';
+import { dataForSalesTileTableHeader } from '../../data/dataForSalesTileTableHeader';
+import { dataSales } from '../../data/dataSales';
+import { ConfirmAction } from '../../popups/ConfirmAction/ConfirmAction';
 
 class TodaySalesTile extends React.Component {
 	constructor (props) {
@@ -32,39 +35,11 @@ class TodaySalesTile extends React.Component {
 
 				</div>
 
-		    	<table>
-		    		<thead>
-		    			<tr>
-		    				<th className='number'>№</th>
-		    				<th className='product-name'>Товар</th>
-		    				<th className='price'>Цена</th>
-		    				<th className='amount'>Кол-во</th>
-		    				<th className='status'>Статус</th>
-		    			</tr>
-		    		</thead>
-		    		<tbody>
-		    			<tr>
-		    				<td className='number'>1</td>
-		    				<td className='product-name'>Haier BCFE625AWRU</td>
-		    				<td className='price'>44 900 ₽</td>
-		    				<td className='amount'>1</td>
-		    				<td className='status'>
-		    					<div className='indicator-icon confirm-icon'></div>
-		    					<span className='status confirm'>подтверждена</span>
-		    				</td>
-		    			</tr>
-		    			<tr>
-		    				<td className='number'>2</td>
-		    				<td className='product-name'>Haier BCFE625AWRU</td>
-		    				<td className='price'>144 900 ₽</td>
-		    				<td className='amount'>3</td>
-		    				<td className='status'>
-		    					<div className='indicator-icon reject-icon'></div>
-		    					<span className='reject'> отклонена</span>
-		    				</td>
-		    			</tr>
-		    		</tbody>
-		    	</table>
+		    	<Table 
+					dataForTableHeader={dataForSalesTileTableHeader}
+					dataForTableBody={dataSales}
+                    maxRows={2}
+				/>
 		    </div>
         );
 	}

@@ -2,10 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import './buttonIcon-style.css';
 import TooltipForButton from '../tooltipForButton/TooltipForButton';
-import { DropDownMenu } from '../dropDownMenu/DropDownMenu';
-import { dataForMenu } from '../../data/dataForMenu';
 
-class ButtonIcon extends React.Component {
+export class ButtonIcon extends React.Component {
     constructor(props) {
         super(props);
 
@@ -17,6 +15,10 @@ class ButtonIcon extends React.Component {
         this.wrapperDiv = React.createRef();
     }
 
+    static defaultProps = {
+        classes: {}
+    };
+
     render() {
         return (
             <div 
@@ -24,10 +26,10 @@ class ButtonIcon extends React.Component {
                 ref={this.wrapperDiv}
             >
                 <button 
-                    className = {classNames('button-icon')}
+                    className = {classNames('button-icon', this.props.classes.btnSize)}
                     onMouseEnter = {this.handleEnter}
                     onMouseLeave = {this.handleLeave}
-                    onClick = {this.handleClickButton}
+                    onClick = {this.props.onClick}
                 >
                     {this.props.icon}
                     <div className={'svgBtnIcon-wrapper'}></div>
@@ -37,14 +39,6 @@ class ButtonIcon extends React.Component {
                     <TooltipForButton
                         tooltipHover={this.state.onHover}
                         tooltipText={this.props.textForTooltip}
-                    />
-                }
-
-                {(this.props.dataForDropDownMenu && this.state.onFocus) && 
-                    <DropDownMenu 
-                        dropDownItems={this.props.dataForDropDownMenu}
-                        closeMenuOutside={this.handleClickOutside}
-                        closeMenu={this.handleClickSelect}
                     />
                 }
             </div>
@@ -62,31 +56,4 @@ class ButtonIcon extends React.Component {
             onHover: false,
         });
     }
-
-    handleClickButton = () => {
-        if (this.props.dataForDropDownMenu) {
-            this.setState({
-                onFocus: !this.state.onFocus,
-            })
-        }
-        if (typeof this.props.onClick === 'function') {
-            this.props.onClick();
-        }
-    }
-
-    handleClickOutside = (event) => {
-        if (!this.wrapperDiv.current.contains(event.target)){
-            this.setState({
-                onFocus: false,
-            })
-        }
-    }
-
-    handleClickSelect = (value) => {
-        this.setState({
-            onFocus: false,
-        })
-    }
 }
-
-export default ButtonIcon;

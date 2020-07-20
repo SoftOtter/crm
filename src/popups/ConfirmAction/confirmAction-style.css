@@ -1,0 +1,42 @@
+.ConfirmAction__background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ConfirmAction {
+    color: #82869e;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 317px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+
+    margin: 32px;
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),
+        0px 24px 38px 3px rgba(0,0,0,0.14),
+        0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+
+.ConfirmAction__tickIcon {
+    stroke: #536dfe;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}

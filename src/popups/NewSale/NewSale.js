@@ -4,7 +4,7 @@ import './newsale-style.css';
 import TextArea from '../../UI kit/fields/TextArea';
 import FieldForAmount from '../../UI kit/fieldForAmount/FieldForAmount.js';
 import { SearchIcon } from '../../icons/SearchIcon';
-import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon.js';
+import { ButtonIcon } from '../../UI kit/buttonIcon/ButtonIcon.js';
 import { MoreInfoIcon } from '../../icons/MoreInfoIcon';
 import { TabsForSidebar } from '../../UI kit/tabsForSidebar/TabsForSidebar';
 import { InputForSelect } from '../../UI kit/select/InputForSelect.js';

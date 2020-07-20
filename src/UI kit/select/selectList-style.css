@@ -11,6 +11,7 @@
     right: 0;
     z-index: 500;
     overflow: hidden;
+    padding-right: 4px;
 }
 
 .selectList {
@@ -53,6 +54,7 @@
   /* Track */
 ::-webkit-scrollbar-track {
     background: #edeff5;
+    border-radius: 4px;
 }
    
   /* Handle */

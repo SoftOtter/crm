@@ -1,0 +1,42 @@
+.YearList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.YearList__visibleYears {
+    height: 312px;
+    overflow: auto;
+    
+}
+
+/* .DatePicker__content {
+    padding-right: 4px;
+} */
+
+.YearList__yearButton {
+    width: 60px;
+    border-radius: 4px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    color: #383e5c;
+    font-size: 16px;
+    line-height: 34px;
+    font-family: 'IBM Plex Sans';
+}
+
+.YearList__yearButton:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.YearList__yearButton:hover:not(.YearList__yearButton-focused) {
+    background-color:  #f2f4ff;
+}
+
+.YearList__yearButton:active:not(.YearList__yearButton-focused) {
+    background-color: #e4e8ff;
+}
+
+.YearList__yearButton-focused {
+    background-color: #536dfe;
+    color: #fff;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { MinorButton } from '../../UI kit/minorButton/MinorButton';
 import { MajorButton } from '../../UI kit/majorButton/MajorButon';
-import ButtonIcon from '../../UI kit/buttonIcon/ButtonIcon';
+import { ButtonIcon } from '../../UI kit/buttonIcon/ButtonIcon';
 import { DeleteIcon } from '../../icons/DeleteIcon';
 import '../PopUpTwoButtons/popUpTwoButtons-style.css'
 

@@ -7,8 +7,12 @@ import MyPeopleTile from './MyPeopleTile/MyPeopleTile';
 import TodaySalesTile from './TodaySalesTile/TodaySalesTile';
 import MyMonthlyIncomeTile from './MyMonthlyIncomeTile/MyMonthlyIncomeTile';
 import NewSale from '../popups/NewSale/NewSale';
-import { PopUpTwoButtons } from '../popups/PopUpTwoButtons/PopUpTwoButtons';
-import { AddNewSale } from '../popups/AddNewSale/AddNewSale';
+import { DateRangePicker } from '../UI kit/dateRangePicker/DateRangePicker';
+import { CompactInput } from '../UI kit/compactInput/CompactInput';
+import Input from '../UI kit/fields/Input';
+import { SearchIcon } from '../icons/SearchIcon';
+import { DateRangePickerHeader } from '../UI kit/dateRangePicker/DateRangePickerHeader/DateRangePickerHeader';
+import { MonthPickerForRange } from '../UI kit/dateRangePicker/MonthPickerForRange/MonthPickerForRange';
 
 class Main extends React.Component {
 	render() {
@@ -41,6 +45,9 @@ class Main extends React.Component {
 				</div>
 				<NewSale />
 
+				{/*<DateRangePicker/>
+				 <DateRangePickerHeader/>
+				<MonthPickerForRange /> */}
 			</main>
 		);
 	}

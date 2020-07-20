@@ -30,36 +30,40 @@ export class InputForSelect extends React.Component {
         return (
             <div className={this.props.className}>
                 {this.props.label &&
-                    <p className={'inputForSelect-label'}>{this.props.label}</p>
+                    <p className={'InputForSelect__label'}>{this.props.label}</p>
                 }
                 <div 
-                    className={'InputForSelect-wrapper'} 
+                    className={'InputForSelect__wrapper'} 
                     onClick={this.handleClickWrapper} 
                     ref={this.wrapperDiv}
                 >
+                    <select 
+                        className={'InputForSelect_nativeSelect'}
+                        value={this.state.selectedItem}
+                    />
                     <div
                         className={classNames(
-                            'inputForSelect',
-                            this.state.focused && 'inputForSelect-focused'
+                            'InputForSelect',
+                            this.state.focused && 'InputForSelect__focused'
                         )}
                     >
                         {this.state.selectedItem
                             ? (
-                                <div className={'inputForSelect-textWrap'}>
+                                <div className={'InputForSelect__textWrap'}>
                                     {selectedItem.text}
                                 </div>
                             )
                             : (
-                                <div className={'inputForSelect-placeholder inputForSelect-textWrap'}>
+                                <div className={'InputForSelect__placeholder InputForSelect__textWrap'}>
                                     {this.props.placeholder}
                                 </div>
                             )
                         }
                         {this.state.focused 
-                            ? <ArrowUpIcon className={'arrow-icon arrowUp-icon'} /> 
-                            : <ArrowDownIcon className={'arrow-icon arrowDown-icon'} />
+                            ? <ArrowUpIcon className={'InputForSelect__arrowIcon InputForSelect__arrowUpIcon'} /> 
+                            : <ArrowDownIcon className={'InputForSelect__arrowIcon InputForSelect__arrowDownIcon'} />
                         }
-                        <div className={'inputForSelect-cover'} />
+                        <div className={'InputForSelect__cover'} />
                     </div>
 
                     {this.state.focused &&

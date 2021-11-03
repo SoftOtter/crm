@@ -1,0 +1,1 @@
+GET http://localhost:5000/weatherforecast/named?query=Arisha HTTP/1.1

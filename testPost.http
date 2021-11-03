@@ -1,0 +1,8 @@
+POST http://localhost:5000/weatherforecast/addUser HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Arina",
+    "email": "arinatab20@gmail.com",
+    "password": "20062012"
+}

@@ -45,8 +45,8 @@ class Main extends React.Component {
 				</div>
 				<NewSale />
 
-				{/*<DateRangePicker/>
-				 <DateRangePickerHeader/>
+				<DateRangePicker/>
+				 {/*<DateRangePickerHeader/>
 				<MonthPickerForRange /> */}
 			</main>
 		);

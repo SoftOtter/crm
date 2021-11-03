@@ -14,9 +14,15 @@ export class CompactInput extends React.Component {
     }
     render() {
         let icon = null;
-        if (this.props.error) {
+        if (this.props.icon) {
             icon = 
-                <div className={'CompactInput__errorIconWrapper'}>
+                <div className={'CompactInput__iconWrapper'} onClick={this.props.onClickIcon}>
+                    {this.props.icon}
+                </div>;
+        }
+        if (this.props.error) {
+            icon =  
+                <div className={'CompactInput__iconWrapper'}>
                     <ErrorIcon className={'CompactInput__errorIcon'}/>
                 </div>;
         }
@@ -48,7 +54,10 @@ export class CompactInput extends React.Component {
                         id={this.props.inputId}
                         value={this.state.value}
                         onChange={this.handleInputChange}
+                        name={this.props.name}
+                        type={this.props.type}
                     />
+                    
                     {icon}
                 </div>
 

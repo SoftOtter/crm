@@ -61,8 +61,8 @@ export class AddNewSale extends React.Component {
 
                     <FieldForAmount
                         className={'AddNewSale__salesInfoAmountInput'}
-                        label = {'Количество'}
-                        upperBound = {10}
+                        label={'Количество'}
+                        upperBound={10}
                         classes={{
                             wrapper: 'AddNewSale__salesInfoAmountInput-height',
                             button: 'AddNewSale__salesInfoAmountInput-buttonWidth',
@@ -72,13 +72,13 @@ export class AddNewSale extends React.Component {
 
                     <Input
                         className={'AddNewSale__salesInfoPriceInput'}
-                        label = {'Цена реализации'}
-                        placeholder = {'Enter smth'}
+                        label={'Цена реализации'}
+                        placeholder={'Enter smth'}
                     />
 
                     <SelectForHeader
                         className={'AddNewSale__salesInfoCurrencySelect'}
-                        dataForSelect = {dataForTypeOfCurrency}
+                        dataForSelect={dataForTypeOfCurrency}
                     />
                 </div>
 
@@ -87,7 +87,7 @@ export class AddNewSale extends React.Component {
                     <GalleryForGoods
                         className={'AddNewSale__additionalInfoGallery'}
                         label={'Фото'}
-                        dataForGallery = {dataForGoodsPhotoes_two}
+                        dataForGallery={dataForGoodsPhotoes_two}
                     />
 
                     <TextArea

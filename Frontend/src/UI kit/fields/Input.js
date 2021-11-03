@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import './input-style.css';
 import { ErrorIcon } from '../../icons/ErrorIcon';
+import './input-style.css';
 
 class Input extends React.Component {
     constructor(props) {
@@ -42,9 +42,11 @@ class Input extends React.Component {
             <div
                 className={this.props.className}
             >
-                <p className={'input-label'}>
-                    {this.props.label}
-                </p>
+                {this.props.label && 
+                    <p className={'input-label'}>
+                        {this.props.label}
+                    </p>
+                }
                 <div className={classNames(
                     'input',
                     this.props.error && 'error',
@@ -60,7 +62,7 @@ class Input extends React.Component {
                     />
                     {icon}
                 </div>
-                <p className={'error'}>{this.props.error ? this.props.error : ' '}</p>
+                {this.props.error && <p className={'error'}>{this.props.error ? this.props.error : ' '}</p>}
             </div>
         );
     }

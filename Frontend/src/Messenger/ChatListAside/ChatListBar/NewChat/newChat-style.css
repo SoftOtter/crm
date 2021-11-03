@@ -1,0 +1,23 @@
+.NewChat__button {
+    width: 48px;
+    height: 48px;
+}
+
+.NewChat__buttonIcon {
+    fill: #536dfe;
+    width: 26px;
+    height: 26px;
+}
+
+.NewChat__button:hover .NewChat__buttonIcon {
+    fill: #4b62e3;
+}
+
+.NewChat__button:disabled .NewChat__buttonIcon {
+    fill: #c5c7d0;
+}
+
+.NewChat__button:active .NewChat__buttonIcon:hover {
+    fill: #4257c9;
+}
+

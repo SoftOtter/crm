@@ -1,13 +1,24 @@
 import React from 'react';
-import './buttonWithIcon-style.css';
 import classNames from 'classnames';
+import TooltipForButton from '../tooltipForButton/TooltipForButton';
+import './buttonWithIcon-style.css';
 
 export class ButtonWithIcon extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            onHover: false,
+            onFocus: false,
+        };
+    }
     render() {
         return (
             <button 
                 className={classNames('buttonWithIcon', this.props.className)}
                 onClick={this.props.onClick}
+                onMouseEnter = {this.handleEnter}
+                onMouseLeave = {this.handleLeave}
             >
                 {this.props.icon &&
                     <div className={'buttomWithIcon-iconContainer'}>
@@ -15,8 +26,27 @@ export class ButtonWithIcon extends React.Component {
                     </div>
                 }
 
-                <span>{this.props.buttonText}</span>
+                {(this.props.textForTooltip && this.state.onHover && !this.state.onFocus) &&
+                    <TooltipForButton
+                        tooltipHover={this.state.onHover}
+                        tooltipText={this.props.textForTooltip}
+                    />
+                }
+
+                {/* <span>{this.props.buttonText}</span> */}
             </button>
         );
+    }
+
+    handleEnter = () => {
+        this.setState({
+            onHover: true,
+        });
+    }
+
+    handleLeave = () => {
+        this.setState({
+            onHover: false,
+        });
     }
 }

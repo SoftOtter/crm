@@ -1,0 +1,57 @@
+.Message {
+    display: flex;
+    
+}
+
+.Message-reverseDirection {
+    flex-direction: row-reverse;
+}
+
+.Message__messageUnit {
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin: 5px 20px 5px;
+    max-width: 500px;
+}
+
+
+.Message__myMessage {
+    background-color: #fff;
+}
+
+.Message__dialogCornerRightIcon {
+    position: absolute;
+    bottom: 0;
+    right: -7px;
+    fill: #fff;
+}
+
+.Message__interlocutorMessage {
+    background-color: #e7ebff;
+}
+
+.Message__dialogCornerLeftIcon {
+    position: absolute;
+    bottom: 0;
+    left: -7px;
+    fill: #e7ebff;
+}
+
+.Message__content {
+    color: #383e5c;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'IBM Plex Sans';
+    padding: 0px 5px;
+}
+
+.Message__sendTime {
+    color: #bfc1ca;
+    font-size: 11px;
+    line-height: 12px;
+    font-family: 'IBM Plex Sans';
+    margin: 0px 8px;
+    align-self: flex-end;
+}

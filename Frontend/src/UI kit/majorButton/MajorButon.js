@@ -1,6 +1,6 @@
 import React from 'react';
-import './majorButton-style.css';
 import classNames from 'classnames';
+import './majorButton-style.css';
 
 export class MajorButton extends React.Component {
     render() {
@@ -10,13 +10,13 @@ export class MajorButton extends React.Component {
                 className={classNames('majorButton', className)}
                 {...rest}
             >
-            {icon &&
-                <div className={'majorButton-iconContainer'}>
-                    {icon}
-                </div>
-            }
-            
-            <span>{buttonText}</span>
+                {icon &&
+                    <div className={'majorButton-iconContainer'}>
+                        {icon}
+                    </div>
+                }
+                
+                <span>{buttonText}</span>
             </button>
         );
     }

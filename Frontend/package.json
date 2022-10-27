@@ -19,6 +19,8 @@
     "babel-loader": "8.1.0",
     "css-loader": "4.2.2",
     "null-loader": "4.0.0",
+    "sass": "1.43.4",
+    "sass-loader": "7.2.0",
     "style-loader": "1.2.1",
     "ts-loader": "8.0.3",
     "webpack": "4.44.1",

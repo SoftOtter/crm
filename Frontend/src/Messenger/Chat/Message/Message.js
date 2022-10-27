@@ -24,7 +24,7 @@ export class Message extends React.Component {
                             ? <DialogCornerRightIcon className={'Message__dialogCornerRightIcon'} />
                             : <DialogCornerLeftIcon className={'Message__dialogCornerLeftIcon'} />)
                     }
-                    <div className={'Message__sendTime'}>16:47</div>
+                    <div className={'Message__sendTime'}>{this.props.time.hour + ':' + this.props.time.minute}</div>
                 </div>
                 
             </div>

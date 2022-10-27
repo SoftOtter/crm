@@ -45,6 +45,7 @@
     line-height: 20px;
     font-family: 'IBM Plex Sans';
     padding: 0px 5px;
+    white-space: pre-line
 }
 
 .Message__sendTime {

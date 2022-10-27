@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "database",
+            "type": "shell",
+            "command": "cd ../Backend/ && docker-compose up"
+        },
+        {
+            "label": "backend",
+            "type": "shell",
+            "command": "cd ../Backend/ && dotnet publish -c Release && cd ./bin/Release/net6.0/publish && ./Messenger"
+        }
+    ]
+}

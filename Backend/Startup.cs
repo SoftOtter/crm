@@ -40,7 +40,6 @@ namespace Messenger
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.Use(async (context, next) =>
             {
                 // for React development

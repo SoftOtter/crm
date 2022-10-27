@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, '../Backend/wwwroot/js/'),
+    path: path.resolve(__dirname, '../Backend/bin/Release/net6.0/publish/wwwroot/js/'),
     publicPath: "/js/",
   },
   mode: 'development',

@@ -37,6 +37,11 @@
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "database",
+            "type": "shell",
+            "command": "docker-compose up"
         }
     ]
 }

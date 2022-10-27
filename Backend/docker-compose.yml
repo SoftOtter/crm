@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  messenger-db:
+    image: postgres:14.5
+    ports:
+      - "40404:5432"
+    volumes:
+      - messenger-vol:/var/lib/postgresql/pgdata
+    environment:
+      POSTGRES_PASSWORD: "Qqq234@#$$"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    stop_grace_period: 1m
+volumes:
+  messenger-vol:

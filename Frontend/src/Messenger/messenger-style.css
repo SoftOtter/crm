@@ -8,6 +8,11 @@
     font-family: 'IBM Plex Sans';
 }
 
+.Messenger__chatList {
+    width: 400px;
+    border-right: 1px solid rgba(208, 210, 222, 0.5); /* or #e3e5ef */
+}
+
 .Messenger__chatContainer {
     display: flex;
     flex-direction: column;

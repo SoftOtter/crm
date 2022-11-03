@@ -4,6 +4,7 @@
 
   min-width: 320px;
   height: 100vh;
+  overflow: hidden;
 
   color: #82869e;
   font-size: 14px;

@@ -1,6 +1,8 @@
 .Chat {
-    background-color: #f9faff;
-    ackground-color: red;
     flex-grow: 1;
-    position: relative;
+    overflow:auto;
+}
+
+.Chat__messages {
+    background-color: #f9faff;
 }

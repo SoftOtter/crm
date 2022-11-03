@@ -1,4 +1,5 @@
 .ChatListAside{
-    width: 344px;
-    border-right: 1px solid rgba(208, 210, 222, 0.5); /* or #e3e5ef */
+    height: calc(100% - 60px);
+    overflow: auto;
+    padding: 0.6rem;
 }

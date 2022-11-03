@@ -1,24 +1,27 @@
 .ChatListItem {
     display: flex;
-    flex-direction: column;
-    padding: 24px 36px 0px 80px;
+    align-items: center;
     position: relative;
-    height: 100px;
     width: 100%;
     color: #383e5c;
     font-size: 14px;
     line-height: 20px;
     font-family: 'IBM Plex Sans';
     background-color: #fff;
-}
-
-.ChatListItem-openedChat {
-    background-color: #f2f4ff;
+    padding: 10px;
 }
 
 .ChatListItem:hover {
-    box-shadow: inset -2px 0px #536dfe;
+    background-color: #f2f4ff;
+    border-radius: 10px;
 }
+
+.ChatListItem.ChatListItem-openedChat {
+    background-color: #536dfe;
+    border-radius: 10px;
+    color: rgb(234, 234, 234);
+}
+
 
 .ChatListItem__menuButtonContainer {
     position: absolute;
@@ -35,21 +38,30 @@
     fill: #82869e;
 }
 
-.ChatListItem__userAvatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: #eee;
-    position: absolute;
-    top: 24px;
-    left: 24px;
+.ChatListItem-openedChat .ChatListItem__menuButtonIcon {
+    fill: #c3c6d6;
 }
 
-.ChatListItem__userMessage {
+.ChatListItem__userAvatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #eee;
+    flex-shrink: 0;
+}
+
+.ChatListItem__textBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px;
+    overflow: hidden;
+}
+
+.ChatListItem__lastMessage {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .ChatListItem__dateTime {

@@ -16,8 +16,6 @@ export class ChatListItem extends React.Component {
         this.state = {
             openedChat: this.props.openedChat,
         };
-
-        this.wrapperDiv = React.createRef();
     }
     render() {
         return (
@@ -32,13 +30,16 @@ export class ChatListItem extends React.Component {
                 </div>
 
                 <div className={'ChatListItem__userAvatar'}></div>
-                <div className={'ChatListItem__userInfoContainer'}>
-                    <span className={'ChatListItem__userName'}>Валерий Антонов</span>
-                    <div className={'ChatListItem__onlineIndicator'}></div>
+                <div className={'ChatListItem__textBlock'}>
+                    <div className={'ChatListItem__userInfoContainer'}>
+                        <p className={'ChatListItem__userName'}>{this.props.userName}</p>
+                        {this.props.userOnline && <div className={'ChatListItem__onlineIndicator'}></div>}
+                    </div>
+                    
+                    <p className={'ChatListItem__dateTime'}>{this.props.metaMessage}</p>
+                    <p className={'ChatListItem__lastMessage'}>{this.props.lastMessage}</p>
                 </div>
                 
-                <div className={'ChatListItem__dateTime'}>сегодня 16:25</div>
-                <p className={'ChatListItem__userMessage'}>Добрый день! Да, через 5 минут будет созвон.</p>
             </div>
         );
     }

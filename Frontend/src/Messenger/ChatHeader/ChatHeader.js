@@ -15,8 +15,17 @@ export class ChatHeader extends React.Component {
         return (
             <div className={'ChatHeader'}>
                 <div className={'ChatHeader__userInfoContainer'}>
-                    <span className={'ChatHeader__userName'}>Валерий Антонов</span>
-                    <span className={'ChatHeader__onlineStatus'}>online</span>
+                    <div className={'ChatHeader__userAvatar'}>
+                        <img 
+                            src='/images/avatars/Sammy.jpg' 
+                            className={'ChatHeader__userAvatarImage'}
+                        />
+                    </div>
+                    <div className='ChatHeader__userInfo'>
+                        <span className={'ChatHeader__userName'}>Валерий Антонов</span>
+                        <span className={'ChatHeader__onlineStatus'}>online</span>
+                    </div>
+                    
                 </div>
                 <div className={'ChatHeader__buttonsContainer'}>
                     <ButtonWithIcon

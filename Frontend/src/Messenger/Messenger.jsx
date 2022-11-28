@@ -5,6 +5,7 @@ import { ChatHeader } from './ChatHeader/ChatHeader';
 import { ChatListAside } from './ChatListAside/ChatListAside';
 import { ChatListBar } from './ChatListAside/ChatListBar/ChatListBar';
 import { NewMessageInput } from './Chat/NewMessageInput/NewMessageInput';
+import { chats } from '../data/chats';
 import './messenger-style.css'
 
 export class Messenger extends React.Component {
@@ -12,6 +13,7 @@ export class Messenger extends React.Component {
         super(props);
 
         this.state = {
+            selectedChatID: 5,
             messages: [
                 {
                     myMessage: true,
@@ -104,6 +106,7 @@ export class Messenger extends React.Component {
                     content: 'I am good too, thanks! What book so impressed you? That one, which I told you about last week? ;)',
                 },
             ],
+            chats: chats,
         };
     }
 
@@ -112,11 +115,18 @@ export class Messenger extends React.Component {
             <div className={'Messenger'}>
                 <div className={'Messenger__chatList'}>
                     <ChatListBar />
-                    <ChatListAside />
+                    <ChatListAside 
+                        chats={this.state.chats}
+                        selectedChat={this.state.selectedChatID}
+                        onChatClick={this.switchChat}
+                    />
                 </div>
                 <div className={'Messenger__chatContainer'}>
                     <ChatHeader />
-                    <Chat messages={this.state.messages} />
+                    <Chat 
+                        messages={this.state.messages}
+                        selectedChat={this.state.selectedChatID}
+                    />
                     <NewMessageInput onEnterPress={this.handleEnterPressed} />
                 </div>
                 
@@ -136,5 +146,11 @@ export class Messenger extends React.Component {
         this.setState({
             messages: newMessages
         });
-    }
+    };
+
+    switchChat = (nextChatID) => {
+        this.setState({
+            selectedChatID: nextChatID
+        })
+    };
 }

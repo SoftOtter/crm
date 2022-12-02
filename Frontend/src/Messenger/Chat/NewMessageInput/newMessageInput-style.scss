@@ -1,9 +1,13 @@
 .newMessageInput {
+    // min-height: 60px;
+    // max-height: 180px;
     height: 120px;
     width: 100%;
     background-color: #fff;
     border-top: 1px solid rgba(208, 210, 222, 0.5);
     display: flex;
+    // transition: height 100ms ease;
+    flex-shrink: 0;
 
     &__button {
         height: 48px;

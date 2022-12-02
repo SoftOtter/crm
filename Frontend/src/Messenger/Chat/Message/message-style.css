@@ -1,6 +1,6 @@
 .Message {
     display: flex;
-    
+    margin-bottom: 8px;
 }
 
 .Message-reverseDirection {
@@ -10,11 +10,11 @@
 .Message__messageUnit {
     display: flex;
     position: relative;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 8px 10px;
-    margin: 5px 20px 5px;
     max-width: 500px;
 }
+
 
 .Message__myMessage {
     background-color: #fff;
@@ -43,7 +43,8 @@
     font-size: 14px;
     line-height: 20px;
     font-family: 'IBM Plex Sans';
-    padding: 0px 5px;
+    letter-spacing: 0.2px;
+    /* padding: 0px 5px; */
     white-space: pre-line;
     word-break: break-word;
 }

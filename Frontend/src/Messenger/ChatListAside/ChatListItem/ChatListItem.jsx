@@ -37,7 +37,7 @@ export class ChatListItem extends React.Component {
                         {this.props.userOnline && <div className={'ChatListItem__onlineIndicator'}></div>}
                     </div>
                     
-                    <p className={'ChatListItem__dateTime'}>{this.formatMeta(this.props.metaMessage)}</p>
+                    <p className={'ChatListItem__dateTime'}>{this.formatMeta(this.props.messageMeta)}</p>
                     <p className={'ChatListItem__lastMessage'}>{this.props.lastMessage}</p>
                 </div>
                 

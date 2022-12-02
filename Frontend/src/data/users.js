@@ -1,0 +1,75 @@
+export const users = [
+    {
+        id: 1,
+        userName: 'Dean Winchester',
+        userOnline: true,
+        avatar: '/images/avatars/Dean.jpg',
+        // e-mail: '',
+    },
+    {
+        id: 2,
+        userName: 'Sam Winchester',
+        userOnline: true,
+        avatar: '/images/avatars/Sam.jpg',
+    },
+    {
+        id: 3,
+        userName: 'Castiel Novak',
+        userOnline: true,
+        avatar: '/images/avatars/Castiel.jpg',
+    },
+    {
+        id: 4,
+        userName: 'Albus Dambldore',
+        userOnline: false,
+        avatar: '',
+    },
+    {
+        id: 5,
+        userName: 'Даниэль Канеман',
+        userOnline: false,
+        avatar: '',
+    },
+    {
+        id: 6,
+        userName: 'Альберт Эйнштейн',
+        userOnline: false,
+        avatar: '',
+    },
+    {
+        id: 7,
+        userName: 'Crowley Fergus Roderick MacLeod',
+        userOnline: true,
+        avatar: '/images/avatars/Crowley.jpg',
+    },
+    {
+        id: 8,
+        userName: 'Геральт из Ривии',
+        userOnline: false,
+        avatar: '',
+    },
+    {
+        id: 9,
+        userName: 'Адам Смит',
+        userOnline: false,
+        avatar: '',
+    },
+    {
+        id: 10,
+        userName: 'John Locke',
+        userOnline: false,
+        avatar: '',
+    },
+    {
+        id: 11,
+        userName: 'Jack (Kline) Winchester-Novak',
+        userOnline: true,
+        avatar: '/images/avatars/JackWN.jpg',
+    },
+    {
+        id: 12,
+        userName: 'Lucifer',
+        userOnline: false,
+        avatar: '/images/avatars/Lucifer.jpg',
+    },
+];

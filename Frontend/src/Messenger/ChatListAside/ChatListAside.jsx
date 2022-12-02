@@ -8,16 +8,19 @@ export class ChatListAside extends React.Component {
         return (
             <div className={'ChatListAside'}>
                 {this.props.chats.map((chat) => {
+                    const user = this.props.users.find((users) => {
+                        return chat.userId === users.id;
+                    });
                     return <ChatListItem
                         key={chat.id}
                         chatID={chat.id}
                         selectedChat={this.props.selectedChat === chat.id}
-                        userName={chat.user.userName}
+                        userName={user.userName}
                         lastMessage={chat.lastMessage}
-                        metaMessage={chat.lastMessageMeta}
-                        userOnline={chat.user.userOnline}
+                        messageMeta={chat.lastMessageMeta}
+                        userOnline={user.userOnline}
                         onChatClick={this.props.onChatClick}
-                        userAvatar={chat.user.avatar}
+                        userAvatar={user.avatar}
                     />;
                 })}
             </div>

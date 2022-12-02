@@ -1,5 +1,5 @@
 .ChatListAside{
     height: calc(100% - 60px);
     overflow: auto;
-    padding: 0.6rem;
+    padding: 0.5rem;
 }

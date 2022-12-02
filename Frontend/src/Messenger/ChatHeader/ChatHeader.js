@@ -17,13 +17,17 @@ export class ChatHeader extends React.Component {
                 <div className={'ChatHeader__userInfoContainer'}>
                     <div className={'ChatHeader__userAvatar'}>
                         <img 
-                            src='/images/avatars/Sammy.jpg' 
+                            src={this.props.selectedChatUser.avatar ? this.props.selectedChatUser.avatar : '/images/avatars/Sammy.jpg'} 
                             className={'ChatHeader__userAvatarImage'}
                         />
                     </div>
                     <div className='ChatHeader__userInfo'>
-                        <span className={'ChatHeader__userName'}>Валерий Антонов</span>
-                        <span className={'ChatHeader__onlineStatus'}>online</span>
+                        <span className={'ChatHeader__userName'}>
+                            {this.props.selectedChatUser.userName}
+                        </span>
+                        <span className={'ChatHeader__onlineStatus'}>
+                            {this.props.selectedChatUser.userOnline ? 'online' : 'offline'}
+                        </span>
                     </div>
                     
                 </div>

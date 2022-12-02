@@ -1,8 +1,11 @@
 .Chat {
     flex-grow: 1;
-    overflow:auto;
+    overflow: auto;
+    background-color: #f9faff;
 }
 
-.Chat__messages {
+.Chat__messagesContainer {
     background-color: #f9faff;
+    padding: 0px 18px;
+    margin: 0px 8px;
 }

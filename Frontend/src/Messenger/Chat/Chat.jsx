@@ -7,17 +7,17 @@ export class Chat extends React.Component {
     render() {
         return (
             <div className={'Chat'} ref={this.scrollableDiv}>
-                <div className={'Chat__messages'}>
+                <div className={'Chat__messagesContainer'}>
                     {this.props.messages.map((messObj, index) => {
                         return <Message 
                             key={index}
                             myMessage={messObj.myMessage} 
                             lastMessageInSequence={messObj.lastMessageInSequence}
                             content={messObj.content}
-                            time={{
-                                hour: 17,
-                                minute: 55,
-                            }}
+                            messageMeta={messObj.messageMeta}
+                                // { hour: 17,
+                                // minute: 55,}
+                            
                        />;
                     })}
                 </div>
@@ -33,5 +33,12 @@ export class Chat extends React.Component {
                 behavior: 'smooth',
             });
         }
+    }
+
+    componentDidMount() {
+        this.scrollableDiv.current.scrollTo({
+            top: this.scrollableDiv.current.scrollHeight,
+            behavior: 'instant',
+        });
     }
 }

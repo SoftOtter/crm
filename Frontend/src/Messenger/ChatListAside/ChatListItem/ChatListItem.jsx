@@ -52,24 +52,20 @@ export class ChatListItem extends React.Component {
     formatMeta = (meta) => {
         const parsedMeta = new Date(meta);
         const year = parsedMeta.getFullYear();
-        const month = this.addZero(parsedMeta.getMonth() + 1); 
-        const day = this.addZero(parsedMeta.getDate());
+        const month = parsedMeta.getMonth(); 
+        const day = parsedMeta.getDate();
 
         const currentMeta = new Date();
-        if (currentMeta.toISOString().slice(0,10) === parsedMeta.toISOString().slice(0,10)) {
-            const hours = this.addZero(parsedMeta.getHours());
-            const minutes = this.addZero(parsedMeta.getMinutes());
-            return `${hours}:${minutes}`;
+        const currentYear = currentMeta.getFullYear();
+        const currentMonth = currentMeta.getMonth();
+        const currentDay = currentMeta.getDate();
+        if (currentYear === year && currentMonth === month && currentDay === day) {
+            const intlOptions = {hour:'2-digit', minute:'2-digit'};
+            return Intl.DateTimeFormat('en-GB',intlOptions).format(parsedMeta);
         }
-        return `${day}.${month}.${year}`;
+        const intlOptions = {year:'numeric', month:'short', day:'numeric'};
+        return Intl.DateTimeFormat('en-GB',intlOptions).format(parsedMeta);
     };
-
-    addZero = (num) => {
-        if ((0 <= num) && (num < 10)) {
-            return '0' + num;
-        }
-        return '' + num;
-    }
 
     randomInt = (max) => Math.floor(Math.random() * max);
     // randomAvatar = () => {

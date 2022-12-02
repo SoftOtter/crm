@@ -164,6 +164,7 @@ export class Messenger extends React.Component {
             myMessage: true,
             lastMessageInSequence: true,
             content: text,
+            messageMeta: new Date().toISOString(),
         });
         if (newMessages[newMessages.length - 2].myMessage) {
             newMessages[newMessages.length - 2].lastMessageInSequence = false;

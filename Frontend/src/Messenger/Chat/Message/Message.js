@@ -1,11 +1,12 @@
 import React from 'react';
 import { DialogCornerRightIcon } from '../../../icons/DialogCornerRightIcon';
 import classNames from 'classnames';
-import './message-style.css';
 import { DialogCornerLeftIcon } from '../../../icons/DialogCornerLeftIcon';
 
+import './message-style.css';
+
+
 export class Message extends React.Component {
-    
     render() {
         let messageAuthor = null;
         if (this.props.myMessage) {
@@ -22,37 +23,28 @@ export class Message extends React.Component {
                             ? <DialogCornerRightIcon className={'Message__dialogCornerRightIcon'} />
                             : <DialogCornerLeftIcon className={'Message__dialogCornerLeftIcon'} />)
                     }
-                    <p className={'Message__sendTime'}>{this.formatMeta(this.props.messageMeta)}</p>
-                    {/* <div className={'Message__sendTime'}>{this.props.time.hour + ':' + this.props.time.minute}</div> */}
+                    <p 
+                        className={'Message__sendTime'}
+                        title={this.getFullFormattedMeta(this.props.messageMeta)}
+                    >
+                        {this.getFormattedTime(this.props.messageMeta)}
+                    </p>
                 </div>
                 
             </div>
         );
     }
 
-    formatMeta = (meta) => {
+    getFullFormattedMeta = (meta) => {
         const parsedMeta = new Date(meta);
-        const year = parsedMeta.getFullYear();
-        const month = this.addZero(parsedMeta.getMonth() + 1); 
-        const day = this.addZero(parsedMeta.getDate());
-
-        const currentMeta = new Date();
-        const currentYear = currentMeta.getFullYear();
-        const currentMonth = this.addZero(currentMeta.getMonth() + 1); 
-        const currentDay = this.addZero(currentMeta.getDate());
-
-        if ((year === currentYear) && (month === currentMonth) && (day === currentDay)) {
-            const hours = this.addZero(parsedMeta.getHours());
-            const minutes = this.addZero(parsedMeta.getMinutes());
-            return `${hours}:${minutes}`;
-        }
-        return `${day}.${month}.${year}`;
+        const intlOptions = {year:'numeric', month:'short', day:'numeric',
+                            hour:'2-digit', minute:'2-digit', second:'2-digit'};
+        return Intl.DateTimeFormat('en-GB',intlOptions).format(parsedMeta);
     };
 
-    addZero = (num) => {
-        if ((0 <= num) && (num < 10)) {
-            return '0' + num;
-        }
-        return '' + num;
+    getFormattedTime = (meta) => {
+        const parsedMeta = new Date(meta);
+        const intlOptions = {hour:'2-digit', minute:'2-digit'};
+        return Intl.DateTimeFormat('en-GB',intlOptions).format(parsedMeta);
     }
 }

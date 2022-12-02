@@ -15,9 +15,6 @@ export class Chat extends React.Component {
                             lastMessageInSequence={messObj.lastMessageInSequence}
                             content={messObj.content}
                             messageMeta={messObj.messageMeta}
-                                // { hour: 17,
-                                // minute: 55,}
-                            
                        />;
                     })}
                 </div>

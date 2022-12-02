@@ -15,7 +15,6 @@
     max-width: 500px;
 }
 
-
 .Message__myMessage {
     background-color: #fff;
 }
@@ -50,10 +49,12 @@
 }
 
 .Message__sendTime {
+    position: relative;
     color: #bfc1ca;
     font-size: 11px;
     line-height: 12px;
     font-family: 'IBM Plex Sans';
     margin: 0px 8px;
     align-self: flex-end;
+    flex-shrink: 0;
 }

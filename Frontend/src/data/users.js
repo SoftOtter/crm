@@ -1,5 +1,11 @@
 export const users = [
     {
+        id: 24,
+        userName: 'Arina',
+        userOnline: true,
+        avatar: '',
+    },
+    {
         id: 1,
         userName: 'Dean Winchester',
         userOnline: true,

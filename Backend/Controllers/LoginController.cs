@@ -26,14 +26,14 @@ namespace Messenger.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpPost("")]
         public ActionResult Login([FromForm] LoginDTO loginData)
         {
             var user = _dbContext.Users.FirstOrDefault(x => x.Email == loginData.Email);
 
             if (user == null || loginData.Password != user.Password)
             {
-                return Unauthorized("That email and password combination is incorrect");
+                return Redirect("/login");
             }
 
             var cookieOptions = new CookieOptions();
@@ -41,6 +41,13 @@ namespace Messenger.Controllers
             Response.Cookies.Append("signedInUser", user.Id.ToString(), cookieOptions);
 
             return Redirect("/");
+        }
+
+        [HttpGet("/logout")]
+        public ActionResult Logout() {
+            Response.Cookies.Append("signedInUser", "null", new CookieOptions { MaxAge = TimeSpan.FromSeconds(1) });
+
+            return Redirect("/login");
         }
     }
 }

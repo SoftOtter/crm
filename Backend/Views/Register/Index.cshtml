@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Register to messenger</title>
+    <style>
+      body > div {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+      }
+      form > * {
+        margin-top: 16px;
+      }
+      form > *:first-child {
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form method="post">
+        <input name="name" type="text" autocomplete="name" placeholder="Name" required>
+        <input name="email" type="email" autocomplete="email" placeholder="Email" required>
+        <input name="password" type="password" autocomplete="new-password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>

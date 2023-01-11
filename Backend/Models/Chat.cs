@@ -9,6 +9,6 @@ namespace Messenger.Models
         public ChatType Type { get; set; }
         public DateTimeOffset DateOfCreation { get; set; }
 
-        public ICollection<ChatParticipant> Partcipants { get; set; }
+        public ICollection<User> Partcipants { get; set; }
     }
 }
